@@ -150,4 +150,4 @@ For technical inquiries or maintenance requests:
 
 *Built with ❤️ for educational excellence*
 *Developed by [Mojeed] - December 2025*
-![Painless Logo](./src/assets/images/pcalogo.png)
+![Painless Logo](./src/assets/images/pcalogo2.png)
