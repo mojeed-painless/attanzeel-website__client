@@ -19,7 +19,7 @@
 
 .about__texts p{
     margin-top: 1rem;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 .motto__texts span {
@@ -121,7 +121,7 @@
 }
 
 .team__director > div:last-child.citation {
-    height: 26rem;
+    height: 28rem;
 }
 
 .team__staffs {
@@ -270,6 +270,18 @@
         padding: 2rem 1rem 1rem;
     }
 
+    .team__director-details h3{
+        font-size: 1.2rem;
+    }
+
+    .team__director-details h4{
+        font-size: 0.875rem;
+    }
+
+    .team__director-details p{
+        font-size: 0.875rem;
+    }
+
     .team__director > div:first-child {
         display: flex;
         flex-direction: column;
@@ -279,7 +291,8 @@
 
     .team__director > div:last-child.citation {
         height: 56rem;
-        text-align: justify;
+        /* text-align: justify; */
+        font-size: 0.95rem;
     }
 
     .team__staffs {
@@ -288,17 +301,25 @@
     }
 
     .team__staff {
-        padding: 1rem;
+        padding: 1rem 1rem 0.2rem;
         flex-direction: column;
         align-items: start;
     }
 
     .team__staff-image {
-        width: 4rem;
+        width: 3.6rem;
     }
 
     .team__staff-details h4 {
-        font-size: 1rem;
+        font-size: 0.875rem;
+    }
+
+    .team__staff-details h5 {
+        font-size: 0.8rem;
+    }
+
+    .team__staff-details p {
+        font-size: 0.875rem;
     }
 
     .team__staff-socials {

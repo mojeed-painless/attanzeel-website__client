@@ -4,6 +4,7 @@ import axios from 'axios';
 import { fetchStudentsAndSubjects } from '../api/auth.js';
 import ScoreInputForm from '../components/ScoreInputForm';
 import StudentRegistrationForm from '../components/StudentRegistrationForm';
+import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 
 const StaffWorkflow = ({ onLogout }) => {
   const [step, setStep] = useState(1);
@@ -20,18 +21,18 @@ const StaffWorkflow = ({ onLogout }) => {
   
   // Input Criteria State
   const [criteria, setCriteria] = useState({
-    academicYear: '2024/2025', // Default value
+    academicYear: '2025/2026',
     term: 'First Term',
-    className: 'SS1A', // Default value
+    className: 'SS 1',
     selectedSubjectIds: [],
   });
 
   // Data to pass to the input form
   const [sessionData, setSessionData] = useState(null); 
 
-  const years = ['2024/2025', '2023/2024'];
+  const years = ['2025/2026', '2024/2025'];
   const terms = ['First Term', 'Second Term', 'Third Term'];
-  const classes = ['JSS1A', 'JSS2A', 'SS1A', 'SS2B']; // Hardcoded for now
+  const classes = ['PLAYGROUP', 'KINDERGARTEN 1', 'KINDERGARTEN 2', 'NURSERY 1', 'NURSERY 2', 'PRIMARY 1', 'PRIMARY 2', 'PRIMARY 3', 'PRIMARY 4', 'PRIMARY 5', 'JSS 1', 'JSS 2', 'JSS 3', 'SS1A', 'SS 2', 'SS 3']; // Hardcoded for now
 
   const userInfo = JSON.parse(localStorage.getItem('userInfo'));
 
@@ -79,7 +80,9 @@ const StaffWorkflow = ({ onLogout }) => {
 
   const renderSubjectSelection = () => (
     <div className="selection-card">
-      <h3>Step 2: Select Subjects for Input</h3>
+
+      <h3>Select Subjects for Input</h3>
+
       <div className="subject-list">
         {sessionData.availableSubjects.map(subject => (
           <label key={subject.id} className="subject-checkbox">
@@ -100,8 +103,12 @@ const StaffWorkflow = ({ onLogout }) => {
           </label>
         ))}
       </div>
-      <button onClick={() => setStep(1)} className="btn-secondary">Back</button>
-      <button onClick={handleNextStep} className="btn-primary">Proceed to Score Input</button>
+
+      <div className="selection-actions">
+        <button onClick={() => setStep(1)}><span><FaArrowLeftLong /></span> Back</button>
+        <button onClick={handleNextStep}>Proceed to Score Input <span><FaArrowRightLong /></span></button>
+      </div>
+      
     </div>
   );
 
@@ -111,9 +118,9 @@ const StaffWorkflow = ({ onLogout }) => {
 
   return (
     <div className="staff-workflow-container">
-        <h2>Staff Dashboard: Result Entry</h2>
-        {error && <p className="error-message">{error}</p>}
+        <h2>Staff Dashboard</h2>
 
+        {error && <p className="error-message">{error}</p>}
 
         <div className="tab-navigation">
             <button 
@@ -140,24 +147,30 @@ const StaffWorkflow = ({ onLogout }) => {
         {/* Step 1: Initial Selection */}
         {step === 1 && (
             <div className="selection-card">
-            <h3>Step 1: Select Criteria</h3>
+
+            <h3>Select Criteria</h3>
+
             <div className="form-group-inline">
                 <select value={criteria.academicYear} onChange={(e) => setCriteria({...criteria, academicYear: e.target.value})}>
                 <option value="">Year</option>
                 {years.map(y => <option key={y} value={y}>{y}</option>)}
                 </select>
+
                 <select value={criteria.term} onChange={(e) => setCriteria({...criteria, term: e.target.value})}>
                 <option value="">Term</option>
                 {terms.map(t => <option key={t} value={t}>{t}</option>)}
                 </select>
+
                 <select value={criteria.className} onChange={(e) => setCriteria({...criteria, className: e.target.value})}>
                 <option value="">Class</option>
                 {classes.map(c => <option key={c} value={c}>{c}</option>)}
                 </select>
+
+                <button onClick={handleNextStep} className="btn-primary" disabled={loading}>
+                    {loading ? 'Loading...' : 'Load Students & Subjects'}
+                </button>
             </div>
-            <button onClick={handleNextStep} className="btn-primary" disabled={loading}>
-                {loading ? 'Loading...' : 'Load Students & Subjects'}
-            </button>
+            
             </div>
         )}
 

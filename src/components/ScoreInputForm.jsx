@@ -97,9 +97,12 @@ useEffect(() => {
         examScore: scores[student._id][subject.id].examScore || 0,
       }));
 
+      const studentCommentData = studentsData.find(d => d._id === student._id) || {};
+
       return {
         studentId: student._id,
         subjectScores: subjectScores,
+        teacherComment: studentCommentData.teacherComment || '',
       };
     });
 
@@ -199,8 +202,12 @@ useEffect(() => {
 
   return (
     <div className="score-input-card">
-      <h3>Result Entry: {className} | {term} | {academicYear}</h3>
-      <p>**Subjects Selected:** {selectedSubjects.map(s => s.name).join(', ')}</p>
+      <h3>{className} {academicYear} {term} Result Entry</h3>
+
+      <p className='selected-subjects-info'>
+        <span>Subjects Selected:</span>
+        {selectedSubjects.map(s => <small>{s.name}</small>)}
+      </p>
       
       <button onClick={onBack} className="btn-secondary back-btn">← Change Subjects</button>
 
@@ -213,28 +220,34 @@ useEffect(() => {
             <thead>
               <tr>
                 <th>Student Name</th>
+
                 {selectedSubjects.map(subject => (
                   <th key={subject.id} colSpan="3" className="subject-header">
                     {subject.name}
                   </th>
                 ))}
+
                 <th>Teacher's comment</th>
               </tr>
+
               <tr>
                 <th></th>
                 {selectedSubjects.map(subject => (
                   <React.Fragment key={subject.id}>
-                    <th>Test (30)</th>
-                    <th>Exam (70)</th>
-                    <th>Total (100)</th>
+                    <th>Test</th>
+                    <th>Exam</th>
+                    <th className='total-cell'>Total</th>
                   </React.Fragment>
                 ))}
+                <th></th>
               </tr>
             </thead>
+
             <tbody>
               {studentsData.map(student => (
                 <tr key={student._id}>
                   <td>{student.firstName} {student.lastName}</td>
+
                   {selectedSubjects.map(subject => (
                     <React.Fragment key={subject.id}>
                       <td>
@@ -247,6 +260,7 @@ useEffect(() => {
                           required
                         />
                       </td>
+
                       <td>
                         <input
                           type="number"
@@ -257,13 +271,14 @@ useEffect(() => {
                           required
                         />
                       </td>
+
                       <td className="total-cell">
                         {calculateTotal(student._id, subject.id)}
                       </td>
                     </React.Fragment>
                   ))}
 
-                  <td colSpan={availableSubjects.length * 2 + 1}>
+                  <td colSpan={availableSubjects.length * 2 + 1} className='teacher-comment'>
                       <textarea
                           id={`comment-${student._id}`}
                           rows="2"
@@ -271,7 +286,6 @@ useEffect(() => {
                           onChange={(e) => 
                               handleInputChange(student._id, 'teacherComment', e.target.value)
                           }
-                          style={{ width: '100%', resize: 'none' }}
                           placeholder="Enter comment here (Max 255 chars)"
                           maxLength={255}
                       />
@@ -281,6 +295,7 @@ useEffect(() => {
             </tbody>
           </table>
         </div>
+
         <button type="submit" className="btn-primary submit-btn" disabled={loading}>
           {loading ? 'Submitting...' : 'Submit All Scores'}
         </button>
@@ -289,6 +304,7 @@ useEffect(() => {
       {successMessage && !loading && (
             <div className="finalization-section">
                 <p>Scores submitted. Review and finalize to make them available to students.</p>
+
                 <button onClick={handleFinalize} className="btn-primary finalize-btn" disabled={loading}>
                     {loading ? 'Generating...' : 'Generate & Finalize Result Sheets (Step 6)'}
                 </button>

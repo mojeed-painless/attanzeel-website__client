@@ -12,7 +12,7 @@ const StudentDashboard = ({ onLogout }) => {
   const [error, setError] = useState('');
   const [checkResult, setCheckResult] = useState(false);
 
-  const years = ['2024/2025', '2023/2024'];
+  const years = ['2025/2026', '2024/2025'];
   const terms = ['First Term', 'Second Term', 'Third Term'];
   const userInfo = JSON.parse(localStorage.getItem('userInfo'));
 
@@ -31,13 +31,15 @@ const StudentDashboard = ({ onLogout }) => {
         params: { academicYear: year, term }
       };
 
-      const { data } = await fetchStudentResults(year, term);
+    const { data } = await fetchStudentResults(year, term);
       setResultData(data);
+      console.log('Fetched result data:', data);
     } catch (err) {
       setError(err.response?.data?.message || 'Failed to fetch results.');
     } finally {
       setLoading(false);
     }
+    
   };
 
 
@@ -94,7 +96,7 @@ const StudentDashboard = ({ onLogout }) => {
                 a.href = url;
                 
                 // Set a clean filename for the user
-                a.download = `Results_${year}_${term}.pdf`; 
+                a.download = `Results_${userInfo.firstName}_${year}_${term}.pdf`; 
                 document.body.appendChild(a);
                 a.click(); // Programmatically click the hidden link
                 document.body.removeChild(a);

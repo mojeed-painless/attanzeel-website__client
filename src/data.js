@@ -216,3 +216,42 @@ export const grades = [
         remark: 'Below Average'
     }
 ] 
+
+
+export const testimonials = [
+    { 
+        id: 1,
+        image: staffImage1,
+        testimony: "Attanzeel International School has transformed my child's learning experience. The blend of Western and Islamic teachings has provided a well-rounded education that nurtures both academic excellence and moral values.",
+        name: 'Dr. Otunla',
+        profession:  'Lecturer'
+    },
+    { 
+        id: 2,
+        image: staffImage2,
+        testimony: "Attanzeel International School has transformed my child's learning experience. The blend of Western and Islamic teachings has provided a well-rounded education that nurtures both academic excellence and moral values.",
+        name: 'Mr. Oriyomi',
+        profession:  'Jornalist'
+    },
+    { 
+        id: 3,
+        image: staffImage3,
+        testimony: "Attanzeel International School has transformed my child's learning experience. The blend of Western and Islamic teachings has provided a well-rounded education that nurtures both academic excellence and moral values Attanzeel International School has transformed my child's learning experience. The blend of Western and Islamic teachings has provided a well-rounded education that nurtures both academic excellence and moral values.",
+        name: 'President Tinubu',
+        profession:  'Politician'
+    },
+    { 
+        id: 4,
+        image: staffImage4,
+        testimony: "Attanzeel International School has transformed my child's learning experience. The blend of Western and Islamic teachings has provided a well-rounded education that nurtures both academic excellence and moral values.",
+        name: 'Mrs. Kofoworola',   
+        profession:  'Trader'
+    },
+    { 
+        id: 5,
+        image: staffImage5,
+        testimony: "Attanzeel International School has transformed my child's learning experience. The blend of Western and Islamic teachings has provided a well-rounded education that nurtures both academic excellence and moral values.",
+        name: 'Mr. Balogun',
+        profession:  'Chief Imam'
+    },
+]

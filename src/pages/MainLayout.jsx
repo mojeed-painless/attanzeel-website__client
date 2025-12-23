@@ -137,7 +137,7 @@ export default function MainLayout() {
                 </div>
 
                 <div className="sub__footer">
-                    <p>&copy; {new Date().getFullYear()} Copyright At-Tanzeel Islamic Center. All right reserved</p>
+                    <p>&copy; {new Date().getFullYear()} At-Tanzeel Islamic Center.</p>
                     <img src={pcaLogo} alt="pca logo" />
                 </div>
             </footer>

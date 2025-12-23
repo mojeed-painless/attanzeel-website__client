@@ -1,9 +1,32 @@
+import { useState } from 'react';
 import  { Link } from 'react-router-dom';
 import '../assets/styles/home.css';
+import { testimonials } from '../data.js';
 import heroImage1 from '../assets/images/hero-image1.png';
+import mallam2 from '../assets/images/mallam5.png';
 import { categories, activities }  from '../data';
+import { FaRegArrowAltCircleLeft, FaRegArrowAltCircleRight } from "react-icons/fa";
 
 export default function Home() {
+
+    const [currentTestimonial, setCurrentTestimonial] = useState(1);
+
+    function increaseCount() {
+        if (currentTestimonial === testimonials.length) {
+            setCurrentTestimonial(1);
+        } else {
+            setCurrentTestimonial(currentTestimonial + 1);
+        }
+    }
+
+    function decreaseCount() {
+        if (currentTestimonial === 1) {
+            setCurrentTestimonial(testimonials.length);
+        } else {
+            setCurrentTestimonial(currentTestimonial - 1);
+        }
+    }
+
     return (
         <>
         <article className='hero__section'>
@@ -69,6 +92,47 @@ export default function Home() {
                <Link to='/activity'><div className="btn btn1">View More</div></Link>
             </div>
         </article>
+
+        <article className="testimonial__section">
+            <div className="container testimonial__container">
+                <h1>What Parents Say About Us</h1>
+                
+                <div className="testimonial__controls">
+                    <button type="button" onClick={decreaseCount}><FaRegArrowAltCircleLeft /></button>
+
+                    <div className="testimonial__cards">
+                        {testimonials.map((testimonial) => (
+                            <div key={testimonial.id} className={"testimonial__card" + (testimonial.id === currentTestimonial ? " active-testimonial__card" : "")}>
+                                <div className="testimonial__image">
+                                    <img src={testimonial.image} alt="image" />
+                                </div>
+
+                                <p>"{testimonial.testimony}"</p>
+
+                                <div className="testimonial__info">
+                                    <h4>{testimonial.name}</h4>
+                                    <p>{testimonial.profession}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                    
+                    <button type="button" onClick={increaseCount}><FaRegArrowAltCircleRight /></button>
+                </div>
+
+                <div className="testimonial__pagination">
+                    {testimonials.map((testimonial) => (
+                        <div 
+                            key={testimonial.id} 
+                            className={"pagination__dot" + (testimonial.id === currentTestimonial ? " active-pagination__dot" : "")}
+                            onClick={() => setCurrentTestimonial(testimonial.id)}
+                        ></div>
+                    ))}
+                </div>
+            </div>
+        </article>
+
+
 
         </>
     )

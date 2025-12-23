@@ -17,17 +17,17 @@
 
         <section className="result__student-info">
             <div>
-                <div className="name"><span>NAME:</span> {resultData.student.firstName}</div>
-                <div className="class"><span>CLASS:</span> {resultData.class}</div>
+                <div className="name"><span>NAME:</span> {resultData.student.firstName} {resultData.student.lastName}</div>
+                <div className="class"><span>CLASS:</span> {resultData.student.currentClass}</div>
             </div>
 
-            <div>
+            {/* <div>
                 <div className="number"><span>TOTAL NO. CLASS:</span> 11</div>
                 <div className="position"><span>POSITION:</span> 2ND</div>
-            </div>
+            </div> */}
         </section>
 
-        <section className="result__body">
+        {/* <section className="result__body">
             <table>
                 <thead>
                     <tr>
@@ -48,32 +48,32 @@
                             <td>{sub.testScore}</td>
                             <td>{sub.examScore}</td>
                             <td>{sub.totalScore}</td>
-                            <td>Excellence</td>
-                            <td>33</td>
-                            <td>79</td>
+                            <td>{sub.remark || 'N/A'}</td>
+                            <td>{sub.lowest || 'N/A'}</td>
+                            <td>{sub.highest || 'N/A'}</td>
                         </tr>
                     ))}
                 </tbody>
             </table>
-        </section>
+        </section> */}
 
         <section className="result__conclusion">
             <div className="result__percentage">
-                <div><span>Total Mark Obtainable: </span> 1500</div>
-                <div><span>Mark Obtained: </span> 1048</div>
+                <div><span>Total Mark Obtainable: </span> {resultData.subjectResults.length * 100}</div>
+                <div><span>Mark Obtained: </span> {resultData.subjectResults.reduce((acc, curr) => acc + curr.totalScore, 0)}</div>
                 <div><span>Percentage: </span> {resultData.overallPercentage.toFixed(2)}%</div>
             </div>
 
-            <div className="result__base">
+            {/* <div className="result__base">
                 <div className='result__comments'>
                     <div>
                         <span>Class Teacher's Comment:</span>
-                        <span>He is capable of achieving a higher grade but he needs monitoring to make progress</span>
+                        <span>{resultData.teacherComment || 'No comment provided'}</span>
                     </div>
 
                     <div>
                         <span>Principal's Comment:</span>
-                        <span>He is capable of achieving a higher grade but he needs monitoring to make progress</span>
+                        <span>{resultData.principalComment || 'No comment provided'}</span>
                     </div>
 
 
@@ -99,14 +99,14 @@
                         </tbody>
                     </table>
                 </div>
-            </div>
+            </div> */}
 
             <p className='result__motto'>KNOWLEDGE VIRTUES AND EXCELLENCE</p>
         </section>
     </div>
 
     <button className="download-btn" onClick={handleDownloadPdf}>
-        <span>Download Results Sheet</span>
+        <span>Download Complete Results</span>
         <span><IoCloudDownloadOutline /></span>
     </button>
     </>
