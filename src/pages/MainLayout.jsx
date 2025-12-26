@@ -5,7 +5,6 @@ import { MdClose } from "react-icons/md";
 import { PiStudent } from "react-icons/pi";
 import { links, subLinks, socials } from '../data';
 import navLogo from '../assets/images/atlogo.png';
-import mapImage from '../assets/images/map.jpg';
 import pcaLogo from '../assets/images/pcalogo2.png';
 
 export default function MainLayout( {handleRoleSet} ) {
