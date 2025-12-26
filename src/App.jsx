@@ -1,6 +1,7 @@
-import React from 'react';
+import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import ScrollToTop from './components/ScrollToTop.jsx';
 
 import MainLayout from './pages/MainLayout';
 import Home from './pages/Home';
@@ -20,10 +21,18 @@ import NotFound from './pages/NotFound';
 
 function App() {
 
+
+  const [currentRole, setCurrentRole] = useState('');
+
+  function handleRoleSet(userRole) {
+    setCurrentRole(userRole);
+  }
+
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
-        <Route element={<MainLayout />}>
+        <Route element={<MainLayout handleRoleSet={handleRoleSet}/>}>
           <Route index element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/activity' element={<Activity />} />
@@ -37,7 +46,7 @@ function App() {
 
         </Route>
         
-        <Route path='/portal' element={<RoleBaseDashboard />} />
+        <Route path='/portal' element={<RoleBaseDashboard currentUser={currentRole}/>} />
 
         <Route path='*' element={<NotFound />} />
       </Routes>

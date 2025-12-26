@@ -1,5 +1,5 @@
 .container.hero__container {
-    min-height: calc(100vh - 4.5rem);
+    /* min-height: calc(100dvh - 4.5rem); */
 }
 
 .hero__container {
@@ -72,14 +72,14 @@
     align-items: center;
     gap: 60px;
     /* cursor: pointer; */
-    width: 90%;
+    width: 100%;
 }
 
 .category__links a {
     border: 1px solid white;
     padding: 0.875rem;
     text-align: center;
-    width: 90%;
+    width: 100%;
     position: relative;
     transition: all 400ms ease;
 }
@@ -146,7 +146,7 @@
 .activity__container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     background: #beeac5;
 }
 
@@ -164,34 +164,25 @@
 }
 
 .activity__card {
-    /* background: #576238; */
-    
-    padding: 1rem;
-    border-radius: 0.5rem;
-    /* box-shadow: 0 0 12px rgba(0, 0, 0, 0.5); */
-    overflow: hidden;
-    transition: all 400ms ease;
-}
-.activity__card:hover {
-    box-shadow: 0 0 12px transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
 }
 
 .activity__image {
-    /* border-radius: 0.5rem; */
+    border-radius: 0.5rem;
     overflow: hidden;
+
 }
 
 .activity__message {
-    /* text-align: center; */
-    color: white;
-    /* margin-bottom: 2.4rem; */
+    margin-bottom: 0.6rem;
 }
 
 .activity__message h4 {
-    margin: 0.3rem 0 1rem;
-    /* max-width: 12rem; */
     color: #06392f;
     font-size: 1rem;
+    margin-bottom: 0.3rem;
 }
 
 .activity__message p {
@@ -200,8 +191,13 @@
 
 .activity__card .btn2 {
     width: fit-content;
-    margin-top: 0.7rem;
+    margin-top: auto;
     padding: 0.5rem 1rem;
+}
+
+.activity__card .btn2:hover {
+    color: #06392f;
+    border: 1px solid #06392f;
 }
 
 .activity__container .btn {

@@ -20,28 +20,58 @@ import staffImage11 from './assets/images/hajia2.png';
 import staffImage12 from './assets/images/hajia3.png';
 
 
+
+export const headerInfo = [
+    {
+        id: 1,
+        className: "green-header",
+        title: "2025/2026 Session Admission is ongoing",
+        content: "Enroll your ward today for an effective academic growth blended with islamic values",
+        buttonText: "Enroll now",
+        link: "",
+    },
+    {
+        id: 2,
+        className: "purple-header",
+        title: "Fruits day: 2024/2025 Session",
+        content: "A fun and educational activity that encourages healthy eating habits.",
+        buttonText: "Learn more",
+        link: "",
+    },
+    {
+        id: 3,
+        className: "blue-header",
+        title: "Celebrating Outstanding Performance",
+        content: "We achieved a 99% Success in just Concluded WEAC & NECO",
+        buttonText: "Read more",
+        link: "",
+    }
+]
+
+
+
 export const links = [
     {id: 1, icon: IoHome, path: '/', name: 'Home'},
     {id: 2, icon: FaBookOpenReader, path: '/about', name: 'About'},
     {id: 3, icon: MdOutlineAttractions, path: '/activity', name: 'Activity'},
     {id: 4, icon: IoLogIn, name: 'Login',
         subLinks: [
-            {id: 1, path: '/portal', name: 'As Existing Student'},
-            {id: 2, path: '/new-student-login', name: 'As New Student'},
-            {id: 3, path: '/portal', name: 'As Staff'},
+            {id: 1, path: '/portal', name: 'Existing Student'},
+            // {id: 2, path: '/new-student-login', name: 'New Student'},
+            {id: 3, path: '/portal', name: 'Staff'},
         ]
     }
 ]
 
 export const subLinks = [
     {id: 1, path: '/portal', name: 'Existing Student'},
-    {id: 2, path: '/new-student-login', name: 'New Student'},
+    // {id: 2, path: '/new-student-login', name: 'New Student'},
     {id: 3, path: '/portal', name: 'Staff'},
 ]
 
 export const socials = [
     {id: 1, link: '', icon: FaGooglePlusG},
-    {id: 2, link: '', icon: FaWhatsapp},
+    {id: 2, link: 'https://wa.me/2348120168494', icon: FaWhatsapp},
     {id: 3, link: '', icon: FaFacebook},
     {id: 4, link: '', icon: FaInstagram},
 ]
@@ -57,22 +87,22 @@ export const activities = [
         id: 1, 
         image: activityCard1, 
         path: '', 
-        title: 'Students on the Assembly Ground', 
-        body: 'This is an opportunity to enrol your Child(ren) for Effective, Sound & Qualitative Education...'
+        title: 'Students at the Assembly Ground', 
+        body: 'Students come together for guidance, and inspiration, fostering discipline, leadership spirit among them'
     },
     {
         id: 2, 
         image: activityCard2, 
         path: '', 
         title: 'Students on Sport Activities', 
-        body: 'This is an opportunity to enrol your Child(ren) for Effective, Sound & Qualitative Education...'
+        body: 'Promoting physical fitness, teamwork, and a healthy competitive mindset through organized sports and game.'
     },
     {
         id: 3, 
         image: activityCard3, 
         path: '', 
         title: 'Students in ICT Class', 
-        body: 'This is an opportunity to enrol your Child(ren) for Effective, Sound & Qualitative Education...'
+        body: 'Providing practical ICT education that enhances problem-solving, creativity, and digital literacy among students.'
     }
 ]
 

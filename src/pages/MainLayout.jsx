@@ -8,10 +8,11 @@ import navLogo from '../assets/images/atlogo.png';
 import mapImage from '../assets/images/map.jpg';
 import pcaLogo from '../assets/images/pcalogo2.png';
 
-export default function MainLayout() {
+export default function MainLayout( {handleRoleSet} ) {
 
     const [isActive, setIsActive] = useState(true);
     const [switchButton, setSwitchButton] = useState(true);
+    // const [currentRole, setCurrentRole] = useState('');
 
     function handleSelect() {
         setIsActive(is => !is);
@@ -20,6 +21,10 @@ export default function MainLayout() {
     function handleSwitchButton() {
         setSwitchButton(sb => !sb);
     }
+
+    // function handleRoleSet(userRole) {
+    //     setCurrentRole(userRole);
+    // }
 
     return (
         <div>
@@ -37,7 +42,7 @@ export default function MainLayout() {
                                         <ul className={`sub-nav__links ${ !isActive ? "active_sub-nav" : ''}`}>
                                             {subLinks.map(({id, path, name}) => (
                                                 <li key={id}>
-                                                    <Link to={path}>
+                                                    <Link to={path} onClick={() => handleRoleSet(name)}>
                                                         <i className='link__icon'><PiStudent /></i>
                                                         {name}
                                                     </Link>
@@ -54,7 +59,7 @@ export default function MainLayout() {
                         <ul className='main-small__nav'>
                             {links.map((item) => (
                                 <li key={item.id}>
-                                    <Link to={item.path} onClick={(item.id === 4) ? handleSelect : ''}>
+                                    <Link to={item.path} onClick={(item.id === 4) ? handleSelect : handleSwitchButton}>
                                         <i><item.icon /></i>
                                         {item.name}
                                     </Link>   
@@ -64,7 +69,7 @@ export default function MainLayout() {
                         <ul className={`sub-small__nav ${ !isActive ? "active-small__nav" : ''}`}>
                             {subLinks.map(({id, path, name}) => (
                                 <li key={id}>
-                                    <Link to={path}>
+                                    <Link to={path} onClick={() => handleRoleSet(name)}>
                                         <i className='small__nav-icon'><PiStudent /></i>
                                         {name}
                                     </Link>
@@ -77,6 +82,7 @@ export default function MainLayout() {
                     {switchButton ? <RxHamburgerMenu /> : <MdClose />}
                 </button>
             </nav>
+            <div className={`overlay ${!switchButton ? 'active-overlay' : ''}`} onClick={handleSwitchButton}></div>
 
             <section className="body__container">
                 <Outlet />
@@ -112,11 +118,20 @@ export default function MainLayout() {
                     <div className="footer__location">
                         <div className="footer__address">
                             <h4>Location</h4>
-                            <p>Oyeyinka Village, Ajia Road, Off New Ibadan/Ife Express Road, Ibadan</p>
+                            <p>Oyeyinka Village, Ajia Road, Off New Ibadan/Ife Express Road, Ona-Ara Ibadan</p>
                         </div>
 
                         <div className="footer__map"> 
-                            <img src={mapImage} alt="map image"/> 
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6655.078575453666!2d4.02124744046385!3d7.33891296171727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1039942aef03ee3d%3A0x1679896d892e422d!2sAjia%20201103%2C%20Oyo!5e0!3m2!1sen!2sng!4v1766696694408!5m2!1sen!2sng"
+                                width="600"
+                                height="400"
+                                style={{ border: 0 }}
+                                allowFullScreen=""
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                                title="At-tanzeel Schools Ibadan"
+                            ></iframe>
                         </div>
                     </div>
 
@@ -125,7 +140,7 @@ export default function MainLayout() {
 
                         <div className="footer__socials">
                             {socials.map((item) => (
-                                <Link key={item.id} to={item.link}><i><item.icon /></i></Link>
+                                <a key={item.id} href={item.link} target="_blank" rel="noopener noreferrer"><i><item.icon /></i></a>
                             ))}
                         </div>
 

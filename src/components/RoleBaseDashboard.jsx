@@ -3,12 +3,13 @@ import React, { useState, useEffect } from 'react';
 import '../assets/styles/rolebase.css';
 import '../assets/styles/dashboard.css';
 import Login from '../pages/StudentLogin';
+import StaffLogin from '../pages/StaffLogin';
 import StudentDashboard from '../pages/StudentDashboard';
 import StaffWorkflow from '../pages/StaffWorkflow';
 import navLogo from '../assets/images/atlogo.png';
 import pcaLogo from '../assets/images/pcalogo2.png';
 
-const RoleBaseDashboard = () => {
+const RoleBaseDashboard = ({ currentUser }) => {
   const [userRole, setUserRole] = useState(null);
 
   useEffect(() => {
@@ -35,7 +36,13 @@ const RoleBaseDashboard = () => {
       case 'staff':
         return <StaffWorkflow onLogout={handleLogout} />;
       default:
-        return <Login onLoginSuccess={handleLoginSuccess} />;
+        return (
+          currentUser === 'Existing Student' ? 
+          
+          <Login onLoginSuccess={handleLoginSuccess} /> :
+
+          <StaffLogin onLoginSuccess={handleLoginSuccess} />
+        );
     }
   };
 

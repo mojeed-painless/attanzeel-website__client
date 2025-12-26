@@ -1,7 +1,5 @@
-// frontend/src/components/Login.js
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
 import { loginUser } from '../api/auth.js';
 import { FaArrowRightLong, FaArrowLeftLong } from "react-icons/fa6";
 import '../assets/styles/login.css';

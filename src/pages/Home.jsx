@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import  { Link } from 'react-router-dom';
+import HeaderInformation from '../components/HeaderInformation.jsx';
 import '../assets/styles/home.css';
 import { testimonials } from '../data.js';
 import heroImage1 from '../assets/images/hero-image1.png';
 import mallam2 from '../assets/images/mallam5.png';
-import { categories, activities }  from '../data';
+import { categories, activities } from '../data';
 import { FaRegArrowAltCircleLeft, FaRegArrowAltCircleRight } from "react-icons/fa";
 
 export default function Home() {
@@ -29,6 +30,10 @@ export default function Home() {
 
     return (
         <>
+        <header>
+            <HeaderInformation />
+        </header>
+
         <article className='hero__section'>
             <div className="container hero__container">
                 
@@ -53,8 +58,8 @@ export default function Home() {
         <article className='category__section'>
             <div className="container category__container">
                 <div className="category__heading">
-                    <h1>Category</h1>
-                    <p>This is an opportunity to enrol your Child(ren) for Effective, Sound & Qualitative Education on both Western & Islamic Platforms.</p>
+                    <h1>Categories</h1>
+                    <p>Explore a structured range of academic programs and activities tailored to support excellence and growth.</p>
                 </div>
 
                 <div className="category__links">
@@ -84,7 +89,7 @@ export default function Home() {
                                 <p>{activity.body}</p>
                             </div>
 
-                            <Link to={activity.path}><div className="btn2">Read More</div></Link>
+                            <Link to={activity.path} className="btn2">Read More</Link>
                         </div>
                     ))}
                 </div>

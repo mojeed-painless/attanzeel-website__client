@@ -112,6 +112,10 @@
     overflow: hidden;
 }
 
+.staff-right-info {
+    background-image: url('../images/staffmsg.jpg');
+}
+
 .cover {
     background: rgba(0, 0, 0, 0.8);
     position: absolute;
@@ -244,6 +248,8 @@
     .right-info {
         padding: 2rem 1rem;
     }
+
+    
 
     .info-logo {
         width: 8rem;
