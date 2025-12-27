@@ -1,0 +1,79 @@
+.class__section {
+    background: var(--color_lightgrey2);
+}
+
+.class__content {
+    display: flex;
+    gap: 2rem;
+    
+}
+
+.class__left {
+    width: 25%;
+    background-image: url('../images/college-image.jpg');
+    background-size: cover;
+}
+
+.class__right {
+    max-width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: white;
+    box-shadow: -1px 19px 50px -27px rgba(0,0,0,0.75);
+}
+
+.class__right h3 {
+    color: var(--color_danger);
+}
+
+.class__right p {
+    color: var(--color_darkgrey);
+}
+
+.prebasic__left {
+    background-image: url('../images/prebasic-image.jpg');
+}
+
+.nursery__left {
+    background-image: url('../images/nursery-image.jpg');
+}
+
+.primary__left {
+    background-image: url('../images/primary-image.jpg');
+}
+
+.jss__left {
+    background-image: url('../images/jss-image.jpg');
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .container.class__container {
+        padding: 2rem 1rem;
+    }
+
+    .class__content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .class__left {
+        display: none;
+        
+    }
+
+    .class__right {
+        max-width: 100%;
+        padding: 1rem;
+    }
+}
