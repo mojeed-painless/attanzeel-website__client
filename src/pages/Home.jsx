@@ -5,7 +5,7 @@ import '../assets/styles/home.css';
 import { testimonials } from '../data.js';
 import heroImage1 from '../assets/images/hero-image1.png';
 import mallam2 from '../assets/images/mallam5.png';
-import { categories, activities } from '../data';
+import { statistics, categories, activities } from '../data';
 import { FaRegArrowAltCircleLeft, FaRegArrowAltCircleRight } from "react-icons/fa";
 
 export default function Home() {
@@ -51,6 +51,24 @@ export default function Home() {
                         We present a chance to enroll your Child(ren) in a Comprehensive Educational Program that combines Western and Islamic Teachings, ensuring Effectiveness and High Quality.
                     </p>
                     <Link to="/enquiry-form"><div className="btn">Get Started</div></Link>
+                </div>
+            </div>
+        </article>
+
+        <article className='statistics__section'>
+            <div className="container statistics__container">
+                <div className="statistics__cards">
+                    {statistics.map(({ id, icon, title, description }) => (
+                        <div key={id} className="statistics__card">
+                            <span>
+                                <img src={icon} alt="" />
+                            </span>
+
+                            <h1>{title}</h1>
+
+                            <small>{description}</small>
+                        </div>
+                    ))}
                 </div>
             </div>
         </article>

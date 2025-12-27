@@ -3,6 +3,9 @@ import { IoHome, IoLogIn } from "react-icons/io5";
 import { FaBookOpenReader } from "react-icons/fa6";
 import { MdOutlineAttractions } from "react-icons/md";
 import { FaGoogleScholar, FaBuildingColumns, FaSchoolFlag } from "react-icons/fa6";
+import stat1 from './assets/images/stats1.png';
+import stat2 from './assets/images/stats2.png';
+import stat3 from './assets/images/stats3.png';
 import activityCard1 from './assets/images/activitycard1.jpg';
 import activityCard2 from './assets/images/activitycard2.jpg';
 import activityCard3 from './assets/images/activitycard3.jpg';
@@ -75,6 +78,35 @@ export const socials = [
     {id: 3, link: '', icon: FaFacebook},
     {id: 4, link: '', icon: FaInstagram},
 ]
+
+
+
+
+
+export const statistics = [
+    {
+        id: 1,
+        icon: stat1,
+        title: "15+",
+        description: "Years of Academic Excellence and Growth",
+    },
+    {
+        id: 2,
+        icon: stat3,
+        title: "25",
+        description: "Certified Educators and Support Staff",
+    },
+    {
+        id: 3,
+        icon: stat2,
+        title: "95%",
+        description: "Student Pass Rate in External Examinations",
+    },
+]
+
+
+
+
 
 export const categories = [
     {id: 1, path: '/basic', title: 'Basic Section', icon: FaGoogleScholar},
