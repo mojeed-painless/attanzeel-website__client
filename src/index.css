@@ -339,14 +339,21 @@ footer {
     gap: 1rem;
 }
 
-.sub__footer img {
-    width: 20rem;
-    cursor: pointer;
-    transition: all 400ms ease;
+.painless-logo {
+    width: 17rem;
+    transition: transform 400ms ease;
 }
 
-.sub__footer img:hover {
-    transform: translateX(0.5rem);
+.painless-logo a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.875rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.painless-logo:hover {
+    transform: translateX(5px);
 }
 
 
@@ -576,5 +583,19 @@ footer {
 
     .sub__footer img {
         width: 14rem;
+    }
+
+    .painless-logo {
+        width: fit-content;
+        margin-inline: auto;
+    }
+
+    .painless-logo a {
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    .painless-logo img {
+        width: 12rem;
     }
 }

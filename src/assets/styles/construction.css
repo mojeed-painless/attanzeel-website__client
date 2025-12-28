@@ -1,0 +1,28 @@
+.construction__container {
+    display: grid;
+    place-content: center;
+    height: calc(100dvh - 4.5rem);
+    background: green;
+    color: white;
+    text-align: center;
+    background-image: linear-gradient( rgba(0,0,0,0.9)), url('../images/activitycard1.jpg');
+    background-size: cover;
+}
+
+.construction__container p {
+    margin-top: 1.5rem;
+    max-width: 30rem;
+    margin-inline: auto;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .construction__container {
+        padding: 1rem;
+    }
+}

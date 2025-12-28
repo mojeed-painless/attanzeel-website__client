@@ -5,7 +5,7 @@ import { MdClose } from "react-icons/md";
 import { PiStudent } from "react-icons/pi";
 import { links, subLinks, socials } from '../data';
 import navLogo from '../assets/images/atlogo.png';
-import pcaLogo from '../assets/images/pcalogo2.png';
+import painlessLogo from '../assets/images/pcalogo2.png';
 
 export default function MainLayout( {handleRoleSet} ) {
 
@@ -152,7 +152,12 @@ export default function MainLayout( {handleRoleSet} ) {
 
                 <div className="sub__footer">
                     <p>&copy; {new Date().getFullYear()} At-Tanzeel Islamic Center.</p>
-                    <img src={pcaLogo} alt="pca logo" />
+                    <div className="painless-logo">
+                        <a href="https://painless-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer">
+                            <small>Powered by:</small> 
+                            <img src={painlessLogo} alt="Painless Logo" />
+                        </a>
+                    </div>
                 </div>
             </footer>
         </div>

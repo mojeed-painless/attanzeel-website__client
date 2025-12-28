@@ -50,7 +50,7 @@ export default function Home() {
                     <p>
                         We present a chance to enroll your Child(ren) in a Comprehensive Educational Program that combines Western and Islamic Teachings, ensuring Effectiveness and High Quality.
                     </p>
-                    <Link to="/enquiry-form"><div className="btn">Get Started</div></Link>
+                    <a href="https://wa.me/2348120168494" target="_blank" rel="noopener noreferrer"><div className="btn">Get Started</div></a>
                 </div>
             </div>
         </article>

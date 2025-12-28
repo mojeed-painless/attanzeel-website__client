@@ -1,5 +1,7 @@
+import ConstructionPage from '../components/ConstructionPage';
+
 export default function BoardingSection() {
     return (
-        <h1>Boarding Section page</h1>
+        <ConstructionPage />
     )
 }

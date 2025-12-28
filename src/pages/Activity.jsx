@@ -1,5 +1,7 @@
+import ConstructionPage from '../components/ConstructionPage';
+
 export default function Activity() {
     return (
-        <h1>Activity page</h1>
+        <ConstructionPage />
     )
 }
