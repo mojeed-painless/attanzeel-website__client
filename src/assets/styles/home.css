@@ -1,6 +1,4 @@
-.container.hero__container {
-    /* min-height: calc(100dvh - 4.5rem); */
-}
+
 
 .hero__container {
     display: flex;
@@ -131,6 +129,7 @@
     display: flex;
     align-items: center;
     gap: 3rem;
+    background: linear-gradient(90deg, #034c36, #003332);
     color: white;
     background-image: url(../images/background1.jpg);
     background-size: cover;
