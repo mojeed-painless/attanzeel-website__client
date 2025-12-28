@@ -13,7 +13,7 @@ export default function CollegeSection() {
         </CategoryArticle>
 
         <CategoryArticle
-            className='jss__left' 
+            className='ss__left' 
             header="Nurturing Passions for Success Ahead (S S 1 - 3)"
             mainImage={prebasicImage}
         >
