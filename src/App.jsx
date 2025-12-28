@@ -6,16 +6,13 @@ import ScrollToTop from './components/ScrollToTop.jsx';
 import MainLayout from './pages/MainLayout';
 import Home from './pages/Home';
 import About from './pages/About';
+import Academics from './pages/Academics';
 import Activity from './pages/Activity';
-// import StudentLogin from './pages/StudentLogin';
-// import NewStudentLogin from './pages/NewStudentLogin';
-// import StaffLogin from './pages/StaffLogin';
+import Gallery from './pages/Gallery';
 import BasicSection from './pages/BasicSection';
 import CollegeSection from './pages/CollegeSection';
 import BoardingSection from './pages/BoardingSection';
 import EnquiryForm from './pages/EnquiryForm';
-// import StudentDashboard from './pages/StudentDashboard';
-// import StaffWorkflow from './pages/StaffWorkflow';
 import RoleBaseDashboard from './components/RoleBaseDashboard';
 import NotFound from './pages/NotFound';
 
@@ -35,10 +32,9 @@ function App() {
         <Route element={<MainLayout handleRoleSet={handleRoleSet}/>}>
           <Route index element={<Home />} />
           <Route path='/about' element={<About />} />
+          <Route path='/academics' element={<Academics />} />
           <Route path='/activity' element={<Activity />} />
-          {/* <Route path='/login' element={<StudentLogin />} /> */}
-          {/* <Route path='/new-student-login' element={<NewStudentLogin />} /> */}
-          {/* <Route path='/staff-login' element={<StaffLogin />} /> */}
+          <Route path='/gallery' element={<Gallery />} />
           <Route path='/basic' element={<BasicSection />} />
           <Route path='/college' element={<CollegeSection />} />
           <Route path='/boarding' element={<BoardingSection />} />

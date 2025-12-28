@@ -1,7 +1,10 @@
 import { FaGooglePlusG, FaWhatsapp, FaFacebook, FaInstagram } from "react-icons/fa";
-import { IoHome, IoLogIn } from "react-icons/io5";
+import { IoHome } from "react-icons/io5";
 import { FaBookOpenReader } from "react-icons/fa6";
-import { MdOutlineAttractions } from "react-icons/md";
+import { BiSolidParty } from "react-icons/bi";
+import { HiMiniAcademicCap } from "react-icons/hi2";
+import { RiGalleryFill } from "react-icons/ri";
+import { RiDoorOpenFill } from "react-icons/ri";
 import { FaGoogleScholar, FaBuildingColumns, FaSchoolFlag } from "react-icons/fa6";
 import stat1 from './assets/images/stats1.png';
 import stat2 from './assets/images/stats2.png';
@@ -64,8 +67,10 @@ export const headerInfo = [
 export const links = [
     {id: 1, icon: IoHome, path: '/', name: 'Home'},
     {id: 2, icon: FaBookOpenReader, path: '/about', name: 'About'},
-    {id: 3, icon: MdOutlineAttractions, path: '/activity', name: 'Activity'},
-    {id: 4, icon: IoLogIn, name: 'Login',
+    {id: 5, icon: HiMiniAcademicCap, path: '/academics', name: 'Academics'},
+    {id: 3, icon: BiSolidParty, path: '/activity', name: 'Activity'},
+    {id: 6, icon: RiGalleryFill, path: '/gallery', name: 'Gallery'},
+    {id: 4, icon: RiDoorOpenFill, name: 'Login',
         subLinks: [
             {id: 1, path: '/portal', name: 'Existing Student'},
             // {id: 2, path: '/new-student-login', name: 'New Student'},
