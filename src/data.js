@@ -6,9 +6,17 @@ import { FaGoogleScholar, FaBuildingColumns, FaSchoolFlag } from "react-icons/fa
 import stat1 from './assets/images/stats1.png';
 import stat2 from './assets/images/stats2.png';
 import stat3 from './assets/images/stats3.png';
+
+import prebasicImage1 from './assets/images/welcome3.jpg';
+import nurseryImage1 from './assets/images/welcome4.jpg';
+import basicImage1 from './assets/images/welcome5.jpg';
+import jssImage1 from './assets/images/welcome6.jpg';
+import ssImage1 from './assets/images/welcome7.jpg';
+
 import activityCard1 from './assets/images/activitycard1.jpg';
 import activityCard2 from './assets/images/activitycard2.jpg';
 import activityCard3 from './assets/images/activitycard3.jpg';
+
 import staffImage1 from './assets/images/mallam1.png';
 import staffImage2 from './assets/images/mallam2.png';
 import staffImage3 from './assets/images/mallam3.png';
@@ -113,6 +121,62 @@ export const categories = [
     {id: 2, path: '/college', title: 'College Section', icon: FaBuildingColumns},
     {id: 3, path: '/boarding', title: 'Boarding Section', icon: FaSchoolFlag}
 ]
+
+
+export const gallery = [
+    {
+        id: 1,
+        title: 'prebasic',
+        images: [
+            { src: prebasicImage1 },
+            { src: staffImage2 },
+            { src: staffImage3 },
+        ]
+    },
+    {
+        id: 2,
+        title: 'nursery',
+        images: [
+            { src: nurseryImage1 },
+            { src: staffImage5 },
+            { src: staffImage6 },
+        ]
+    },
+    {
+        id: 3,
+        title: 'basic',
+        images: [
+            { src: basicImage1 },
+            { src: staffImage8 },
+            { src: staffImage9 },
+        ]
+    },
+    {
+        id: 4,
+        title: 'jss',
+        images: [
+            { src: jssImage1 },
+            { src: staffImage11 },
+            { src: staffImage12 },
+        ]
+    },
+    {
+        id: 5,
+        title: 'ss',
+        images: [
+            { src: ssImage1 },
+            { src: staffImage4 },
+            { src: staffImage1 },
+        ]
+    },
+]
+
+
+
+
+
+
+
 
 export const activities = [
     {

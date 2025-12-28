@@ -41,6 +41,9 @@
 
 /* TEAM SECTION */
 
+.team__container {
+    background: linear-gradient(90deg, #034c36, #003332);
+}
 
 .team__container h1{
     color: white;
@@ -264,7 +267,10 @@
         width: 100%;
     }
 
-
+    .team__container {
+        background: linear-gradient(0deg, #034c36, #003332);
+    }
+    
 
     .team__director {
         padding: 2rem 1rem 1rem;

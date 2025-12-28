@@ -105,7 +105,7 @@ export default function About() {
 
             <article className="team__section">
                 <div className="container team__container">
-                    <h1>Meet Our Team</h1>
+                    <h1>Meet the Director</h1>
 
                     <div className="team__layout">
                         <div className="team__director">
@@ -145,7 +145,7 @@ export default function About() {
                             </div>
                         </div>
                         
-                        <div className="team__staffs">
+                        {/* <div className="team__staffs">
                             {staff.map((item) => (
                                 <div key={item.id} className="team__staff">
                                     <div>  
@@ -166,7 +166,7 @@ export default function About() {
                                     </div>
                                 </div>  
                             ))}
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </article>
