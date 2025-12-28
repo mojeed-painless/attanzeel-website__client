@@ -145,6 +145,12 @@ h4 {
     border: 1px solid white;
 }
 
+.active-link {
+    background: transparent !important;
+    color: white !important;
+    border: 1px solid white !important;
+}
+
 .main-nav__links > li:nth-child(2) a{
     background: var(--color_warning);
 }

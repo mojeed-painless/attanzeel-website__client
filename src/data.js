@@ -70,7 +70,7 @@ export const links = [
     {id: 5, icon: HiMiniAcademicCap, path: '/academics', name: 'Academics'},
     {id: 3, icon: BiSolidParty, path: '/activity', name: 'Activity'},
     {id: 6, icon: RiGalleryFill, path: '/gallery', name: 'Gallery'},
-    {id: 4, icon: RiDoorOpenFill, name: 'Login',
+    {id: 4, icon: RiDoorOpenFill, path: '/#', name: 'Login',
         subLinks: [
             {id: 1, path: '/portal', name: 'Existing Student'},
             // {id: 2, path: '/new-student-login', name: 'New Student'},
