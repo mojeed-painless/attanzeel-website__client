@@ -40,11 +40,17 @@
 
 
 
+
+
+
+
+
+
+
 /* STATISTICS SECTION */
 .statistics__container {
     min-height: 15rem;
-    background: #003332;
-    
+    background: linear-gradient(90deg, #034c36, #003332);
 }
 
 .statistics__cards {
@@ -62,6 +68,8 @@
     padding: 1.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
     color: #127a5b;
+    position: relative;
+    overflow: hidden;
     transition: all 400ms ease;
 }
 
@@ -85,6 +93,30 @@
 
 .statistics__card small {
     color: var(--color_darkgrey);
+    position: relative;
+}
+
+.statistics__card div {
+    position: absolute;
+    left: -2rem;
+    bottom: -3rem;
+    width: 10rem;
+    transform: rotate(45deg);
+}
+
+.statistics__card div img {
+    filter: grayscale(1);
+    opacity: 0.2;
+}
+
+.statistics__card:last-child div {
+    left: -2rem;
+    bottom: -3rem;
+    width: 9rem;
+}
+
+.statistics__card:last-child div img {
+    opacity: 0.1;
 }
 
 

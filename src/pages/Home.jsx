@@ -60,6 +60,10 @@ export default function Home() {
                 <div className="statistics__cards">
                     {statistics.map(({ id, icon, title, description }) => (
                         <div key={id} className="statistics__card">
+                            <div>
+                                <img src={icon} alt="" />
+                            </div>
+                            
                             <span>
                                 <img src={icon} alt="" />
                             </span>
