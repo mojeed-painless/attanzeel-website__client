@@ -1,0 +1,58 @@
+.main-activity__container {
+    background: #beeac5;
+}
+
+.main-activity__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.main-activity__card {
+    background: white;
+    box-shadow: 1px 27px 62px -31px rgba(0,0,0,0.75);
+    padding: 0.5rem 0.5rem 2rem;
+    text-align: center;
+}
+
+.main-activity__message {
+    padding-inline: 2rem;
+    margin-top: 1rem;
+}
+
+.main-activity__message h3 {
+    color: var(--color_darkgrey);
+}
+
+.main-activity__card button {
+    border: none;
+    background: var(--color_success);
+    padding: 0.2rem 1.5rem;
+    border-radius: 0.2rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.main-activity__card button:hover {
+    background: #beeac5;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .main-activity__cards {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3rem;
+    }
+
+    .main-activity__message {
+        padding-inline: 1rem;
+    }
+}

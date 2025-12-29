@@ -65,15 +65,21 @@ export const headerInfo = [
 
 
 export const links = [
-    {id: 1, icon: IoHome, path: '/', name: 'Home'},
-    {id: 2, icon: FaBookOpenReader, path: '/about', name: 'About'},
-    {id: 5, icon: HiMiniAcademicCap, path: '/academics', name: 'Academics'},
-    {id: 3, icon: BiSolidParty, path: '/activity', name: 'Activity'},
-    {id: 6, icon: RiGalleryFill, path: '/gallery', name: 'Gallery'},
-    {id: 4, icon: RiDoorOpenFill, path: '/#', name: 'Login',
+    {id: 1, Icon: IoHome, path: '/', name: 'Home'},
+    {id: 2, Icon: FaBookOpenReader, path: '/about', name: 'About'},
+    {id: 5, Icon: HiMiniAcademicCap, name: 'Academics',
+        subLinks: [
+            {id: 1, path: '/academic-calender', name: 'Academic Calender'},
+            {id: 2, path: '/dress-code', name: 'Dress Code'},
+            {id: 3, path: '/conduct', name: 'Code of Conduct'},
+            {id: 4, path: '/admissions', name: 'Admissions'},
+        ]
+    },
+    {id: 3, Icon: BiSolidParty, path: '/activity', name: 'Activity'},
+    {id: 6, Icon: RiGalleryFill, path: '/gallery', name: 'Gallery'},
+    {id: 4, Icon: RiDoorOpenFill, name: 'Login',
         subLinks: [
             {id: 1, path: '/portal', name: 'Existing Student'},
-            // {id: 2, path: '/new-student-login', name: 'New Student'},
             {id: 3, path: '/portal', name: 'Staff'},
         ]
     }
@@ -188,21 +194,21 @@ export const activities = [
         id: 1, 
         image: activityCard1, 
         path: '', 
-        title: 'Students at the Assembly Ground', 
+        title: 'Assembly Ground', 
         body: 'Students come together for guidance, and inspiration, fostering discipline, leadership spirit among them'
     },
     {
         id: 2, 
         image: activityCard2, 
         path: '', 
-        title: 'Students on Sport Activities', 
+        title: 'Sport Activities', 
         body: 'Promoting physical fitness, teamwork, and a healthy competitive mindset through organized sports and game.'
     },
     {
         id: 3, 
         image: activityCard3, 
         path: '', 
-        title: 'Students in ICT Class', 
+        title: 'ICT Class', 
         body: 'Providing practical ICT education that enhances problem-solving, creativity, and digital literacy among students.'
     }
 ]

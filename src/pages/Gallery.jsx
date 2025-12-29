@@ -2,6 +2,6 @@ import ConstructionPage from '../components/ConstructionPage';
 
 export default function Gallery() {
     return (
-        <ConstructionPage />
+        <ConstructionPage name='Gallery' />
     )
 }

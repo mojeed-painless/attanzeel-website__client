@@ -36,13 +36,16 @@ export default function MainLayout( {handleRoleSet} ) {
                     <ul className='main-nav__links'>
                         {links.map(({id, path, name, subLinks}) => (
                             <li key={id}>
-                                <NavLink to={path} className={({ isActive }) => isActive ? 'active-link' : ''} onClick={(id === 4) ? handleSelect : ''}>{name}</NavLink>
-                                    {id === 4 && 
+                                {
+                                    (id === 4 || id === 5) ? <span className={({ isActive }) => isActive ? 'active-link' : ''} onClick={(id === 4) ? handleSelect : ''}>{name}</span> :
+
+                                    <NavLink to={path} className={({ isActive }) => isActive ? 'active-link' : ''} onClick={(id === 4) ? handleSelect : ''}>{name}</NavLink>
+                                }
+                                    {(id === 4 || id === 5) && 
                                         <ul className={`sub-nav__links ${ !isActive ? "active_sub-nav" : ''}`}>
                                             {subLinks.map(({id, path, name}) => (
-                                                <li key={id}>
+                                                <li key={id} on>
                                                     <NavLink to={path} onClick={() => handleRoleSet(name)}>
-                                                        <i className='link__icon'><PiStudent /></i>
                                                         {name}
                                                     </NavLink>
                                                 </li>
@@ -54,24 +57,34 @@ export default function MainLayout( {handleRoleSet} ) {
                     </ul>
 
                     {/* Sidebar for small screen */}
-                    <div className={`small__nav ${ !switchButton ? "active_small__nav" : ''}`}>
+                    <div className={`small__nav ${ !switchButton ? "active-small__nav" : ''}`}>
                         <ul className='main-small__nav'>
-                            {links.map((item) => (
-                                <li key={item.id}>
-                                    <NavLink to={item.path} className={({ isActive }) => isActive ? 'active-link' : ''} onClick={(item.id === 4) ? handleSelect : handleSwitchButton}>
-                                        <i><item.icon /></i>
-                                        {item.name}
-                                    </NavLink>   
-                                </li>
-                            ))}
-                        </ul>
-                        <ul className={`sub-small__nav ${ !isActive ? "active-small__nav" : ''}`}>
-                            {subLinks.map(({id, path, name}) => (
+                            {links.map(({id, path, name, Icon, subLinks}) => (
                                 <li key={id}>
-                                    <NavLink to={path} className={({ isActive }) => isActive ? 'active-link' : ''} onClick={() => handleRoleSet(name)}>
-                                        <i className='small__nav-icon'><PiStudent /></i>
-                                        {name}
-                                    </NavLink>
+                                    {
+                                        (id === 4 || id === 5) ? 
+                                        <span className={({ isActive }) => isActive ? 'small-active-link' : ''} onClick={(id === 4) ? handleSelect : ''}>
+                                            <i><Icon /></i>
+                                            {name}
+                                        </span> :
+
+                                        <NavLink to={path} className={({ isActive }) => isActive ? 'small-active-link' : ''} onClick={(id === 4) ? handleSelect : handleSwitchButton}>
+                                            <i><Icon /></i>
+                                            {name}
+                                        </NavLink>
+                                    } 
+
+                                    {(id === 4 || id === 5) && 
+                                        <ul className={`sm-sub-nav__links ${ !isActive ? "active_sub-nav" : ''}`}>
+                                            {subLinks.map(({id, path, name}) => (
+                                                <li key={id} onClick={handleSwitchButton}>
+                                                    <NavLink to={path} onClick={() => handleRoleSet(name)}>
+                                                        {name}
+                                                    </NavLink>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    }
                                 </li>
                             ))}
                         </ul>
@@ -96,21 +109,14 @@ export default function MainLayout( {handleRoleSet} ) {
                             <ul className='main-footer__nav'>
                                 {links.map(({ id, path, name }) => (
                                     <li key={id}>
-                                        <NavLink to={path} className={({ isActive }) => isActive ? 'active-link' : ''} onClick={(id === 4) ? handleSelect : ''}>{name}</NavLink>   
+                                        {
+                                            (id === 4 || id === 5) ? <span className={({ isActive }) => isActive ? 'footer__active-link' : ''} onClick={(id === 4) ? handleSelect : ''}>{name}</span> :
+
+                                            <NavLink to={path} className={({ isActive }) => isActive ? 'footer__active-link' : ''} onClick={(id === 4) ? handleSelect : ''}>{name}</NavLink>
+                                        }                                    
                                     </li>
                                 ))}
                             </ul>
-
-                            {/* <ul className={`sub-footer__nav ${ !isActive ? "active_footer__nav" : ''}`}>
-                                {sublinks.map(({id, path, name}) => (
-                                    <li key={id}>
-                                        <Link to={path}>
-                                            <i className='footer__nav-icon'><PiStudent /></i>
-                                            {name}
-                                        </Link>
-                                    </li>
-                                ))}
-                            </ul> */}
                         </div>
                     </div>
 

@@ -9,6 +9,10 @@
     background-size: cover;
 }
 
+.construction__container h2 {
+    color: var(--color_warning);
+}
+
 .construction__container p {
     margin-top: 1.5rem;
     max-width: 30rem;

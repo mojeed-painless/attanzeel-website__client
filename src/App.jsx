@@ -6,7 +6,10 @@ import ScrollToTop from './components/ScrollToTop.jsx';
 import MainLayout from './pages/MainLayout';
 import Home from './pages/Home';
 import About from './pages/About';
-import Academics from './pages/Academics';
+import AcademicCalender from './pages/AcademicCalender';
+import DressCode from './pages/DressCode';
+import CodeOfConduct from './pages/CodeOfConduct';
+import Admissions from './pages/Admissions';
 import Activity from './pages/Activity';
 import Gallery from './pages/Gallery';
 import BasicSection from './pages/BasicSection';
@@ -32,7 +35,10 @@ function App() {
         <Route element={<MainLayout handleRoleSet={handleRoleSet}/>}>
           <Route index element={<Home />} />
           <Route path='/about' element={<About />} />
-          <Route path='/academics' element={<Academics />} />
+          <Route path='/academic-calender' element={<AcademicCalender />} />
+          <Route path='/dress-code' element={<DressCode />} />
+          <Route path='/conduct' element={<CodeOfConduct />} />
+          <Route path='/admissions' element={<Admissions />} />
           <Route path='/activity' element={<Activity />} />
           <Route path='/gallery' element={<Gallery />} />
           <Route path='/basic' element={<BasicSection />} />
