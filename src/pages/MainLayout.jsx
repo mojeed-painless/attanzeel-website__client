@@ -45,7 +45,7 @@ export default function MainLayout( {handleRoleSet} ) {
                                         <ul className={`sub-nav__links ${ !isActive ? "active_sub-nav" : ''}`}>
                                             {subLinks.map(({id, path, name}) => (
                                                 <li key={id} on>
-                                                    <NavLink to={path} onClick={() => handleRoleSet(name)}>
+                                                    <NavLink to={path} className={({ isActive }) => isActive ? 'sub-active-link' : ''} onClick={() => handleRoleSet(name)}>
                                                         {name}
                                                     </NavLink>
                                                 </li>
@@ -78,7 +78,7 @@ export default function MainLayout( {handleRoleSet} ) {
                                         <ul className={`sm-sub-nav__links ${ !isActive ? "active_sub-nav" : ''}`}>
                                             {subLinks.map(({id, path, name}) => (
                                                 <li key={id} onClick={handleSwitchButton}>
-                                                    <NavLink to={path} onClick={() => handleRoleSet(name)}>
+                                                    <NavLink to={path} className={({ isActive }) => isActive ? 'sub-active-link' : ''} onClick={() => handleRoleSet(name)}>
                                                         {name}
                                                     </NavLink>
                                                 </li>

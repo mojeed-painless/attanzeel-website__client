@@ -157,11 +157,20 @@ h4 {
     border: 1px solid white;
 }
 
+
+
 .active-link {
     background: transparent !important;
     color: white !important;
     border: 1px solid white !important;
 }
+.sub-active-link {
+    background: rgba(255, 255, 255, 0.5) !important;
+}
+.small-active-link {
+    background: rgba(0,0,0,0.6) !important;
+}
+
 
 .main-nav__links > li:nth-child(2) a{
     background: var(--color_warning);
@@ -211,6 +220,7 @@ h4 {
     width: 15rem;
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
     padding: 1rem 0.5rem;
     background: rgba(0, 0, 0, 0.8);
     opacity: 0;
@@ -545,6 +555,7 @@ footer {
     .sm-sub-nav__links {
         display: flex;
         flex-direction: column;
+        gap: 0.5rem;
         background: rgba(0, 0, 0, 0.8);
         opacity: 0;
         display: none;
