@@ -2,7 +2,7 @@ import { useState } from 'react';
 import '../assets/styles/category-article.css';
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
-import { gallery } from '../data';
+import { sectionGallery } from '../data';
 
 export default function CategoryArticle({ className, header, children, mainImage, category }) {
     
@@ -14,7 +14,7 @@ export default function CategoryArticle({ className, header, children, mainImage
         setCurrentClass(category);
     }
 
-    const selectedGallery = gallery.find(item => item.title === currentClass);
+    const selectedGallery = sectionGallery.find(item => item.title === currentClass);
 
     return (
         <>

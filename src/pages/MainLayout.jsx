@@ -37,14 +37,14 @@ export default function MainLayout( {handleRoleSet} ) {
                         {links.map(({id, path, name, subLinks}) => (
                             <li key={id}>
                                 {
-                                    (id === 4 || id === 5) ? <span className={({ isActive }) => isActive ? 'active-link' : ''} onClick={(id === 4) ? handleSelect : ''}>{name}</span> :
+                                    (id === 4 || id === 5) ? <span>{name}</span> :
 
                                     <NavLink to={path} className={({ isActive }) => isActive ? 'active-link' : ''} onClick={(id === 4) ? handleSelect : ''}>{name}</NavLink>
                                 }
                                     {(id === 4 || id === 5) && 
                                         <ul className={`sub-nav__links ${ !isActive ? "active_sub-nav" : ''}`}>
                                             {subLinks.map(({id, path, name}) => (
-                                                <li key={id} on>
+                                                <li key={id}>
                                                     <NavLink to={path} className={({ isActive }) => isActive ? 'sub-active-link' : ''} onClick={() => handleRoleSet(name)}>
                                                         {name}
                                                     </NavLink>
@@ -63,7 +63,7 @@ export default function MainLayout( {handleRoleSet} ) {
                                 <li key={id}>
                                     {
                                         (id === 4 || id === 5) ? 
-                                        <span className={({ isActive }) => isActive ? 'small-active-link' : ''} onClick={(id === 4) ? handleSelect : ''}>
+                                        <span>
                                             <i><Icon /></i>
                                             {name}
                                         </span> :
@@ -110,7 +110,7 @@ export default function MainLayout( {handleRoleSet} ) {
                                 {links.map(({ id, path, name }) => (
                                     <li key={id}>
                                         {
-                                            (id === 4 || id === 5) ? <span className={({ isActive }) => isActive ? 'footer__active-link' : ''} onClick={(id === 4) ? handleSelect : ''}>{name}</span> :
+                                            (id === 4 || id === 5) ? <span>{name}</span> :
 
                                             <NavLink to={path} className={({ isActive }) => isActive ? 'footer__active-link' : ''} onClick={(id === 4) ? handleSelect : ''}>{name}</NavLink>
                                         }                                    

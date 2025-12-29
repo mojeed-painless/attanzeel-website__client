@@ -295,6 +295,8 @@ h4 {
 footer {
     background: var(--color_darkgrey);
     color: white;
+    position: relative;
+    z-index: 10000;
 }
 
 .main__footer {

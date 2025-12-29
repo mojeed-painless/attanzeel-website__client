@@ -134,7 +134,7 @@ export const categories = [
 ]
 
 
-export const gallery = [
+export const sectionGallery = [
     {
         id: 1,
         title: 'prebasic',
@@ -326,35 +326,6 @@ export const staff = [
 
 
 
-export const grades = [
-    {
-        id: 1,
-        score: '75% - 100%',
-        remark: 'Excellent'
-    },
-    {
-        id: 2,
-        score: '66% - 74%',
-        remark: 'Very Good'
-    },
-    {
-        id: 3,
-        score: '55% - 64%',
-        remark: 'Good'
-    },
-    {
-        id: 4,
-        score: '50% - 54%',
-        remark: 'Average'
-    },
-    {
-        id: 5,
-        score: 'less than 50',
-        remark: 'Below Average'
-    }
-] 
-
-
 export const testimonials = [
     { 
         id: 1,
@@ -392,3 +363,155 @@ export const testimonials = [
         profession:  'Chief Imam'
     },
 ]
+
+
+
+
+export const mainGallery = [
+    {
+        id: 1,
+        thumbnail: ssImage1,
+        caption: '2025 Fruit Day',
+        images: [
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+        ]
+    },
+    {
+        id: 2,
+        thumbnail: jssImage1,
+        caption: '2025 End of the year Party',
+        images: [
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+        ]
+    },
+    {
+        id: 3,
+        thumbnail: basicImage1,
+        caption: 'PTA Meeting',
+        images: [
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+        ]
+    },
+    {
+        id: 4,
+        thumbnail: nurseryImage1,
+        caption: '2025 Open day',
+        images: [
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+        ]
+    },
+    {
+        id: 5,
+        thumbnail: prebasicImage1,
+        caption: '2025 Excursion',
+        images: [
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+        ]
+    },
+    {
+        id: 6,
+        thumbnail: jssImage1,
+        caption: '2025 Childrens Day',
+        images: [
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+        ]
+    },
+    {
+        id: 7,
+        thumbnail: nurseryImage1,
+        caption: 'Inter-School Debate',
+        images: [
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+        ]
+    },
+    {
+        id: 8,
+        thumbnail: ssImage1,
+        caption: 'MSSN Meeting',
+        images: [
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600 },
+        ]
+    },
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+export const grades = [
+    {
+        id: 1,
+        score: '75% - 100%',
+        remark: 'Excellent'
+    },
+    {
+        id: 2,
+        score: '66% - 74%',
+        remark: 'Very Good'
+    },
+    {
+        id: 3,
+        score: '55% - 64%',
+        remark: 'Good'
+    },
+    {
+        id: 4,
+        score: '50% - 54%',
+        remark: 'Average'
+    },
+    {
+        id: 5,
+        score: 'less than 50',
+        remark: 'Below Average'
+    }
+] 
