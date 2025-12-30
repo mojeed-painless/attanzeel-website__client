@@ -144,4 +144,8 @@
     .gallery__album {
         padding: 1rem;
     }
+
+    .gallery__album img {
+        border: 2.5px solid white;
+    }
 }
