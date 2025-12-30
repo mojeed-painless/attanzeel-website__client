@@ -60,8 +60,64 @@
 }
 
 .gallery__album {
-
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -10000;
+    background: rgba(0,0,0,0.9);
+    backdrop-filter: blur(10px);
+    color: white;
+    width: 100%;
+    height: 100vh;
+    padding: 4rem 6rem;
+    overflow-y: scroll;
+    opacity: 0;
+    transition: all 400ms ease;
 }
+
+.active-gallery__album {
+    opacity: 1;
+    z-index: 99999;
+}
+
+.gallery__album small {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    display: inline-flex;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.gallery__album small:hover{
+    color: yellow;
+    transform: scale(1.2);
+}
+
+
+.gallery__album p {
+    margin-bottom: 1rem;
+}
+
+.gallery__album img {
+    border: 3.5px solid white;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .gallery__album {
+        padding: 4rem;
+    }
+}
+
+
+
+
+
 
 
 
@@ -81,5 +137,11 @@
         bottom: -1.5rem;
         height: 3rem;
         width: 3rem;
+    }
+
+
+
+    .gallery__album {
+        padding: 1rem;
     }
 }

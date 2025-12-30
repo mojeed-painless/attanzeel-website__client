@@ -373,13 +373,13 @@ export const mainGallery = [
         thumbnail: ssImage1,
         caption: '2025 Fruit Day',
         images: [
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-1-1' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-1-2' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-1-3' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-1-4' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-1-5' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-1-6' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-1-7' },
         ]
     },
     {
@@ -387,11 +387,11 @@ export const mainGallery = [
         thumbnail: jssImage1,
         caption: '2025 End of the year Party',
         images: [
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-2-1' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-2-2' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-2-3' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-2-4' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-2-5' },
         ]
     },
     {
@@ -399,9 +399,9 @@ export const mainGallery = [
         thumbnail: basicImage1,
         caption: 'PTA Meeting',
         images: [
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-3-1' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-3-2' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-3-3' },
         ]
     },
     {
@@ -409,8 +409,8 @@ export const mainGallery = [
         thumbnail: nurseryImage1,
         caption: '2025 Open day',
         images: [
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-4-1' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-4-2' },
         ]
     },
     {
@@ -418,14 +418,14 @@ export const mainGallery = [
         thumbnail: prebasicImage1,
         caption: '2025 Excursion',
         images: [
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-5-1' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-5-2' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-5-3' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-5-4' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-5-5' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-5-6' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-5-7' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-5-8' },
         ]
     },
     {
@@ -433,23 +433,23 @@ export const mainGallery = [
         thumbnail: jssImage1,
         caption: '2025 Childrens Day',
         images: [
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-6-1' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-6-2' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-6-3' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-6-4' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-6-5' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-6-6' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-6-7' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-6-8' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-6-9' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-6-10' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-6-11' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-6-12' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-6-13' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-6-14' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-6-15' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-6-16' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-6-17' },
         ]
     },
     {
@@ -457,9 +457,9 @@ export const mainGallery = [
         thumbnail: nurseryImage1,
         caption: 'Inter-School Debate',
         images: [
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-7-1' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-7-2' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-7-3' },
         ]
     },
     {
@@ -467,11 +467,11 @@ export const mainGallery = [
         thumbnail: ssImage1,
         caption: 'MSSN Meeting',
         images: [
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
-            { src: ssImage1, width: 800, height: 600 },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-8-1' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-8-2' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-8-3' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-8-4' },
+            { src: ssImage1, width: 800, height: 600, key: 'gallery-8-5' },
         ]
     },
 ]
