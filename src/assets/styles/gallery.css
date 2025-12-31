@@ -1,3 +1,9 @@
+.gallery__container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7)), url('../images/welcome4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
 .gallery__cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -5,9 +11,11 @@
 }
 
 .gallery__card {
-    background: var(--color_warning);
+    background: rgb(254, 177, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(4px);
     padding: 0.5rem 0.5rem 1rem;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     position: relative;
     overflow: hidden;
     cursor: pointer;
@@ -33,13 +41,18 @@
 }
 
 .gallery__image {
-    border-radius: 0.5rem;
+    border-radius: 0.7rem;
     overflow: hidden;
+}
+
+.gallery__image img {
+    border-radius: 0.7rem;
 }
 
 .gallery__card h5 {
     text-align: center;
     margin: 0.5rem 0;
+    color: white;
 }
 
 .gallery__number {
@@ -130,6 +143,10 @@
     .gallery__cards {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
+    }
+
+    .gallery__card {
+        padding: 0.2rem 0.2rem 0.7rem;
     }
 
     .gallery__card::after {
