@@ -31,6 +31,7 @@ header {
 
 .header__container.inactive {
     opacity: 0;
+    pointer-events: none;
 }
 
 .header__container::before {
@@ -70,15 +71,15 @@ header {
 
 
 
-.header__left a {
-    display: flex;
-    gap: 0.6rem;
-    transition: all 400ms ease;
-}
-
-.header__left a:hover {
+.header__left button:hover a {
     text-decoration: none;
     transform: translateX(10px);
+}
+
+.header__left a {
+    display: inline-flex;
+    gap: 0.6rem;  
+    transition: all 400ms ease;  
 }
 
 .header__left span {
@@ -94,7 +95,7 @@ header {
 
 .purple-header {
     background-image: url('../images/header-image3.jpg');
-    
+    background-color: rgb(128, 0, 128);
 }
 .purple-header::before {
     background: linear-gradient(90deg, rgba(128, 0, 128, 0.95) 0%, rgba(128, 0, 128, 0.8) 50%, transparent 100%);
@@ -102,9 +103,22 @@ header {
 
 .blue-header {
     background-image: url('../images/header-image4.jpg');
+    background-color: rgb(45, 45, 122);
 }
 .blue-header::before {
     background: linear-gradient(90deg, rgba(45, 45, 122, 0.95) 0%, rgba(45, 45, 122, 0.8) 50%, transparent 100%);
+}
+
+.header__count {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.875rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.5rem;
 }
 
 

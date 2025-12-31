@@ -20,6 +20,9 @@ import activityCard1 from './assets/images/activitycard1.jpg';
 import activityCard2 from './assets/images/activitycard2.jpg';
 import activityCard3 from './assets/images/activitycard3.jpg';
 
+import parent4 from './assets/images/parent4.jpg';
+import parent3 from './assets/images/parent3.jpg';
+
 import staffImage1 from './assets/images/mallam1.png';
 import staffImage2 from './assets/images/mallam2.png';
 import staffImage3 from './assets/images/mallam3.png';
@@ -72,7 +75,7 @@ export const links = [
             {id: 1, path: '/academic-calender', name: 'Academic Calender'},
             {id: 2, path: '/dress-code', name: 'Dress Code'},
             {id: 3, path: '/conduct', name: 'Code of Conduct'},
-            {id: 4, path: '/admissions', name: 'Admissions'},
+            // {id: 4, path: '/admissions', name: 'Admissions'},
         ]
     },
     {id: 3, Icon: BiSolidParty, path: '/activity', name: 'Activity'},
@@ -329,38 +332,35 @@ export const staff = [
 export const testimonials = [
     { 
         id: 1,
-        image: staffImage1,
-        testimony: "Attanzeel International School has transformed my child's learning experience. The blend of Western and Islamic teachings has provided a well-rounded education that nurtures both academic excellence and moral values.",
-        name: 'Dr. Otunla',
-        profession:  'Lecturer'
+        image: '',
+        testimony: "At-tanzeel Schools Ibadan really surprised my family through their Western education and Arabic studies. The level of teaching for the children is top-notch, and both my son and my daughter have shown great improvement in their academics..",
+        name: 'Engr. Bello Akeem',
+        gender: 'male',
+        profession:  'Engineer'
     },
     { 
         id: 2,
-        image: staffImage2,
-        testimony: "Attanzeel International School has transformed my child's learning experience. The blend of Western and Islamic teachings has provided a well-rounded education that nurtures both academic excellence and moral values.",
-        name: 'Mr. Oriyomi',
-        profession:  'Jornalist'
+        image: '',
+        testimony: "AT-TANZEEL School  offers a well-balanced curriculum that focuses on academic excellence and strong character development. I have seen positive growth in my children, both academically and morally, since enrolling them in the school. The school also encourages student participation in sports, which helps build confidence and discipline. It's truly a great school dedicated to nurturing future leaders.",
+        name: 'Mrs Animasahun K. H',
+        gender: 'female',
+        profession:  'Entrepreneur / Teacher'
     },
     { 
         id: 3,
-        image: staffImage3,
-        testimony: "Attanzeel International School has transformed my child's learning experience. The blend of Western and Islamic teachings has provided a well-rounded education that nurtures both academic excellence and moral values Attanzeel International School has transformed my child's learning experience. The blend of Western and Islamic teachings has provided a well-rounded education that nurtures both academic excellence and moral values.",
-        name: 'President Tinubu',
-        profession:  'Politician'
+        image: parent3,
+        testimony: "At-Tanzeel School has been a wonderful place for my son’s Arabic and Islamic learning. I have seen clear improvement in his confidence, Arabic reading, and understanding of Islamic values. The teachers are patient and supportive, and the school provides a disciplined environment I would gladly recommend to other parents.",
+        name: 'Hajia Hamdah Adeola',
+        gender: 'female',
+        profession:  'Educational Facilitator'
     },
     { 
         id: 4,
-        image: staffImage4,
-        testimony: "Attanzeel International School has transformed my child's learning experience. The blend of Western and Islamic teachings has provided a well-rounded education that nurtures both academic excellence and moral values.",
-        name: 'Mrs. Kofoworola',   
-        profession:  'Trader'
-    },
-    { 
-        id: 5,
-        image: staffImage5,
-        testimony: "Attanzeel International School has transformed my child's learning experience. The blend of Western and Islamic teachings has provided a well-rounded education that nurtures both academic excellence and moral values.",
-        name: 'Mr. Balogun',
-        profession:  'Chief Imam'
+        image: parent4,
+        testimony: "I had an amazing experience at At-tanzeel Schools Ibadan (ASI), The teachers are super supportive, and the facilities are top-notch. The curriculum is engaging both in western and Islamic Education and I love the extracurricular activities they offer. The school really cares about student growth and well-being. Highly recommend!",
+        name: 'Mrs. Olagunju Rukayat',
+        gender: 'female', 
+        profession:  'Teacher'
     },
 ]
 

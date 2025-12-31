@@ -4,7 +4,8 @@ import HeaderInformation from '../components/HeaderInformation.jsx';
 import '../assets/styles/home.css';
 import { testimonials } from '../data.js';
 import heroImage1 from '../assets/images/hero-image1.png';
-import mallam2 from '../assets/images/mallam5.png';
+import maleAnonymous from '../assets/images/male-anonymous.jpg';
+import femaleAnonymous from '../assets/images/female-anonymous.jpg';
 import { statistics, categories, activities } from '../data';
 import { FaRegArrowAltCircleLeft, FaRegArrowAltCircleRight } from "react-icons/fa";
 
@@ -128,17 +129,19 @@ export default function Home() {
                     <button type="button" onClick={decreaseCount}><FaRegArrowAltCircleLeft /></button>
 
                     <div className="testimonial__cards">
-                        {testimonials.map((testimonial) => (
-                            <div key={testimonial.id} className={"testimonial__card" + (testimonial.id === currentTestimonial ? " active-testimonial__card" : "")}>
-                                <div className="testimonial__image">
-                                    <img src={testimonial.image} alt="image" />
-                                </div>
+                        {testimonials.map(({id, testimony, image, name, profession, gender}) => (
+                            <div key={id} className={"testimonial__card" + (id === currentTestimonial ? " active-testimonial__card" : "")}>
+                                <p><span>"</span>{testimony}"</p>
 
-                                <p>"{testimonial.testimony}"</p>
+                                <div className="testimonial__footer">
+                                    <div className="testimonial__image">
+                                        <img src={image ? image : gender === 'male' ? maleAnonymous : femaleAnonymous} alt="image" />
+                                    </div>
 
-                                <div className="testimonial__info">
-                                    <h4>{testimonial.name}</h4>
-                                    <p>{testimonial.profession}</p>
+                                    <div className="testimonial__info">
+                                        <h4>{name}</h4>
+                                        <p>{profession}</p>
+                                    </div>
                                 </div>
                             </div>
                         ))}

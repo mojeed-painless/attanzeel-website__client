@@ -12,7 +12,7 @@ export default function HeaderInformation() {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % headerInfo.length);
-        }, 12000);
+        }, 10000);
 
         return () => clearInterval(interval);
     }, []);
@@ -30,7 +30,10 @@ export default function HeaderInformation() {
                                 <span><FaArrowRightLong /></span>
                             </Link>
                         </button>
+                        
                     </div>
+
+                    <span className='header__count'>{index + 1} | {headerInfo.length}</span>
 
                     <div className="header__right">
                         {/* <img src={headerImage1} alt="" /> */}
