@@ -2,6 +2,32 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.7)), url('../images/welcome4.jpg');
     background-size: cover;
     background-position: center;
+    position: relative;
+}
+
+.gallery__filter-btn {
+    display: none;
+}
+
+.gallery__filter-dropdown {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.gallery__filter-dropdown button {
+    background: var(--color_lightgrey2);
+    border: 0;
+    outline: 0;
+    padding: 0.3rem 1.5rem;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+.gallery__filter-dropdown button:hover {
+    background: var(--color_warning);
 }
 
 .gallery__cards {
@@ -19,7 +45,8 @@
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    display: flex;
+    display: none;
+    opacity: 0;
     flex-direction: column;
     transition: all 400ms ease;
 }
@@ -40,6 +67,11 @@
     transform: rotate(45deg);
 }
 
+.active-gallery__card {
+    display: flex;
+    opacity: 1;
+}
+
 .gallery__image {
     border-radius: 0.7rem;
     overflow: hidden;
@@ -49,7 +81,7 @@
     border-radius: 0.7rem;
 }
 
-.gallery__card h5 {
+.gallery__card p {
     text-align: center;
     margin: 0.5rem 0;
     color: white;
@@ -145,6 +177,49 @@
         gap: 1rem;
     }
 
+    .gallery__filter {
+        margin-bottom: 2rem;
+        position: relative;
+    }
+
+    .gallery__filter-btn {
+        display: flex;
+        padding: 0.2rem 0.5rem;
+        gap: 0.5rem;
+        border: 0;
+        outline: 0;
+        background: var(--color_lightgrey2);
+        font-size: 1rem;
+        border-radius: 0.3rem;
+    }
+
+    .gallery__filter-dropdown {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        border-radius: 0.5rem;
+        margin-bottom: 2rem;
+        overflow: hidden;
+        background: var(--color_lightgrey2);
+        width: fit-content;
+        position: absolute;
+        top: 2rem;
+        left: -9.5rem;
+        transition: all 400ms ease;
+        z-index: 1000;
+    }
+
+    .active-gallery__filter {
+        left: 0;
+    }
+
+    .gallery__filter-dropdown button {
+        background: transparent;
+        text-align: left;
+        padding: 0.5rem 1.5rem;
+        border-radius: 0;
+    }
+
     .gallery__card {
         padding: 0.2rem 0.2rem 0.7rem;
     }
@@ -154,6 +229,10 @@
         bottom: -1.5rem;
         height: 3rem;
         width: 3rem;
+    }
+
+    .gallery__card p {
+        font-size: 0.875rem;
     }
 
 

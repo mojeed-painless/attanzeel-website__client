@@ -23,6 +23,85 @@ import activityCard3 from './assets/images/activitycard3.jpg';
 import parent4 from './assets/images/parent4.jpg';
 import parent3 from './assets/images/parent3.jpg';
 
+import excursion_24_thumbnail from './assets/images/excursion_2024/excursion_24_thumbnail.jpg';
+import excursion_24_1 from './assets/images/excursion_2024/excursion_24_1.jpg';
+import excursion_24_2 from './assets/images/excursion_2024/excursion_24_2.jpg';
+import excursion_24_3 from './assets/images/excursion_2024/excursion_24_3.jpg';
+import excursion_24_4 from './assets/images/excursion_2024/excursion_24_4.jpg';
+
+import childrenDay_24_thumbnail from './assets/images/childrenDay_2024/childrenDay_24_thumbnail.jpg';
+import childrenDay_24_1 from './assets/images/childrenDay_2024/childrenDay_24_1.jpg';
+import childrenDay_24_2 from './assets/images/childrenDay_2024/childrenDay_24_2.jpg';
+import childrenDay_24_3 from './assets/images/childrenDay_2024/childrenDay_24_3.jpg';
+import childrenDay_24_4 from './assets/images/childrenDay_2024/childrenDay_24_4.jpg';
+
+import party_24_thumbnail from './assets/images/party_2024/party_24_thumbnail.jpg';
+import party_24_1 from './assets/images/party_2024/party_24_1.jpg';
+import party_24_2 from './assets/images/party_2024/party_24_2.jpg';
+import party_24_3 from './assets/images/party_2024/party_24_3.jpg';
+import party_24_4 from './assets/images/party_2024/party_24_4.jpg';
+import party_24_5 from './assets/images/party_2024/party_24_5.jpg';
+import party_24_6 from './assets/images/party_2024/party_24_6.jpg';
+import party_24_7 from './assets/images/party_2024/party_24_7.jpg';
+import party_24_8 from './assets/images/party_2024/party_24_8.jpg';
+import party_24_9 from './assets/images/party_2024/party_24_9.jpg';
+import party_24_10 from './assets/images/party_2024/party_24_10.jpg';
+
+import pta_thumbnail from './assets/images/PTA/pta_thumbnail.jpg';
+import pta_1 from './assets/images/PTA/pta_1.jpg';
+import pta_2 from './assets/images/PTA/pta_2.jpg';
+import pta_3 from './assets/images/PTA/pta_3.jpg';
+
+import excursion_25_thumbnail from './assets/images/excursion_2025/excursion_25_thumbnail.jpg';
+import excursion_25_1 from './assets/images/excursion_2025/excursion_25_1.jpg';
+import excursion_25_2 from './assets/images/excursion_2025/excursion_25_2.jpg';
+import excursion_25_3 from './assets/images/excursion_2025/excursion_25_3.jpg';
+import excursion_25_4 from './assets/images/excursion_2025/excursion_25_4.jpg';
+import excursion_25_5 from './assets/images/excursion_2025/excursion_25_5.jpg';
+import excursion_25_6 from './assets/images/excursion_2025/excursion_25_6.jpg';
+import excursion_25_7 from './assets/images/excursion_2025/excursion_25_7.jpg';
+import excursion_25_8 from './assets/images/excursion_2025/excursion_25_8.jpg';
+
+import craft_thumbnail from './assets/images/craft/craft_thumbnail.jpg';
+import craft_1 from './assets/images/craft/craft_1.jpg';
+import craft_2 from './assets/images/craft/craft_2.jpg';
+import craft_3 from './assets/images/craft/craft_3.jpg';
+import craft_4 from './assets/images/craft/craft_4.jpg';
+import craft_5 from './assets/images/craft/craft_5.jpg';
+
+import party_25_thumbnail from './assets/images/party_2025/party_25_thumbnail.jpg';
+import party_25_1 from './assets/images/party_2025/party_25_1.jpg';
+import party_25_2 from './assets/images/party_2025/party_25_2.jpg';
+import party_25_3 from './assets/images/party_2025/party_25_3.jpg';
+import party_25_4 from './assets/images/party_2025/party_25_4.jpg';
+import party_25_5 from './assets/images/party_2025/party_25_5.jpg';
+import party_25_6 from './assets/images/party_2025/party_25_6.jpg';
+import party_25_7 from './assets/images/party_2025/party_25_7.jpg';
+import party_25_8 from './assets/images/party_2025/party_25_8.jpg';
+import party_25_9 from './assets/images/party_2025/party_25_9.jpg';
+
+import fruitDay_25_thumbnail from './assets/images/fruitDay_2025/fruitDay_25_thumbnail.jpg';
+import fruitDay_25_1 from './assets/images/fruitDay_2025/fruitDay_25_1.jpg';
+import fruitDay_25_2 from './assets/images/fruitDay_2025/fruitDay_25_2.jpg';
+import fruitDay_25_3 from './assets/images/fruitDay_2025/fruitDay_25_3.jpg';
+import fruitDay_25_4 from './assets/images/fruitDay_2025/fruitDay_25_4.jpg';
+import fruitDay_25_5 from './assets/images/fruitDay_2025/fruitDay_25_5.jpg';
+import fruitDay_25_6 from './assets/images/fruitDay_2025/fruitDay_25_6.jpg';
+import fruitDay_25_7 from './assets/images/fruitDay_2025/fruitDay_25_7.jpg';
+import fruitDay_25_8 from './assets/images/fruitDay_2025/fruitDay_25_8.jpg';
+import fruitDay_25_9 from './assets/images/fruitDay_2025/fruitDay_25_9.jpg';
+import fruitDay_25_10 from './assets/images/fruitDay_2025/fruitDay_25_10.jpg';
+import fruitDay_25_11 from './assets/images/fruitDay_2025/fruitDay_25_11.jpg';
+import fruitDay_25_12 from './assets/images/fruitDay_2025/fruitDay_25_12.jpg';
+import fruitDay_25_13 from './assets/images/fruitDay_2025/fruitDay_25_13.jpg';
+import fruitDay_25_14 from './assets/images/fruitDay_2025/fruitDay_25_14.jpg';
+import fruitDay_25_15 from './assets/images/fruitDay_2025/fruitDay_25_15.jpg';
+
+
+
+
+
+
 import staffImage1 from './assets/images/mallam1.png';
 import staffImage2 from './assets/images/mallam2.png';
 import staffImage3 from './assets/images/mallam3.png';
@@ -369,109 +448,128 @@ export const testimonials = [
 
 export const mainGallery = [
     {
-        id: 1,
-        thumbnail: ssImage1,
+        id: 8,
+        thumbnail: fruitDay_25_thumbnail,
         caption: '2025 Fruit Day',
+        heading: '',
+        category: 'Fruit Day',
         images: [
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-1-1' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-1-2' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-1-3' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-1-4' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-1-5' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-1-6' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-1-7' },
-        ]
-    },
-    {
-        id: 2,
-        thumbnail: jssImage1,
-        caption: '2025 End of the year Party',
-        images: [
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-2-1' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-2-2' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-2-3' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-2-4' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-2-5' },
-        ]
-    },
-    {
-        id: 3,
-        thumbnail: basicImage1,
-        caption: 'PTA Meeting',
-        images: [
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-3-1' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-3-2' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-3-3' },
-        ]
-    },
-    {
-        id: 4,
-        thumbnail: nurseryImage1,
-        caption: '2025 Open day',
-        images: [
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-4-1' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-4-2' },
-        ]
-    },
-    {
-        id: 5,
-        thumbnail: prebasicImage1,
-        caption: '2025 Excursion',
-        images: [
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-5-1' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-5-2' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-5-3' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-5-4' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-5-5' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-5-6' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-5-7' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-5-8' },
-        ]
-    },
-    {
-        id: 6,
-        thumbnail: jssImage1,
-        caption: '2025 Childrens Day',
-        images: [
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-6-1' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-6-2' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-6-3' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-6-4' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-6-5' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-6-6' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-6-7' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-6-8' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-6-9' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-6-10' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-6-11' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-6-12' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-6-13' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-6-14' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-6-15' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-6-16' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-6-17' },
+            { src: fruitDay_25_1, width: 1300, height: 1000, key: 'gallery-8-1' },
+            { src: fruitDay_25_2, width: 1300, height: 1000, key: 'gallery-8-2' },
+            { src: fruitDay_25_3, width: 1300, height: 1000, key: 'gallery-8-3' },
+            { src: fruitDay_25_4, width: 1300, height: 1000, key: 'gallery-8-4' },
+            { src: fruitDay_25_5, width: 1300, height: 1000, key: 'gallery-8-5' },
+            { src: fruitDay_25_6, width: 1300, height: 1000, key: 'gallery-8-6' },
+            { src: fruitDay_25_7, width: 1300, height: 1000, key: 'gallery-8-7' },
+            { src: fruitDay_25_8, width: 1300, height: 1000, key: 'gallery-8-8' },
+            { src: fruitDay_25_9, width: 1300, height: 1000, key: 'gallery-8-9' },
+            { src: fruitDay_25_10, width: 1300, height: 1000, key: 'gallery-8-10' },
+            { src: fruitDay_25_11, width: 1300, height: 1000, key: 'gallery-8-11' },
+            { src: fruitDay_25_12, width: 1000, height: 1300, key: 'gallery-8-12' },
+            { src: fruitDay_25_13, width: 1000, height: 1300, key: 'gallery-8-13' },
+            { src: fruitDay_25_14, width: 1000, height: 1300, key: 'gallery-8-14' },
+            { src: fruitDay_25_15, width: 1000, height: 1300, key: 'gallery-8-15' },
         ]
     },
     {
         id: 7,
-        thumbnail: nurseryImage1,
-        caption: 'Inter-School Debate',
+        thumbnail: party_25_thumbnail,
+        caption: '2025 Prize Giving',
+        heading: '',
+        category: 'Prize Giving',
         images: [
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-7-1' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-7-2' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-7-3' },
+            { src: party_25_1, width: 1100, height: 1000, key: 'gallery-7-1' },
+            { src: party_25_2, width: 1000, height: 1300, key: 'gallery-7-2' },
+            { src: party_25_3, width: 1100, height: 1000, key: 'gallery-7-3' },
+            { src: party_25_4, width: 1000, height: 1300, key: 'gallery-7-4' },
+            { src: party_25_5, width: 1000, height: 1300, key: 'gallery-7-5' },
+            { src: party_25_6, width: 1000, height: 1300, key: 'gallery-7-6' },
+            { src: party_25_7, width: 1000, height: 1300, key: 'gallery-7-7' },
+            { src: party_25_8, width: 1000, height: 1300, key: 'gallery-7-8' },
+            { src: party_25_9, width: 1000, height: 1300, key: 'gallery-7-9' },
         ]
     },
     {
-        id: 8,
-        thumbnail: ssImage1,
-        caption: 'MSSN Meeting',
+        id: 6,
+        thumbnail: craft_thumbnail,
+        caption: "Students' Craft",
+        category: 'Craft',
         images: [
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-8-1' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-8-2' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-8-3' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-8-4' },
-            { src: ssImage1, width: 800, height: 600, key: 'gallery-8-5' },
+            { src: craft_1, width: 600, height: 1000, key: 'gallery-6-1' },
+            { src: craft_2, width: 600, height: 1000, key: 'gallery-6-2' },
+            { src: craft_3, width: 600, height: 1000, key: 'gallery-6-3' },
+            { src: craft_4, width: 600, height: 1000, key: 'gallery-6-4' },
+            { src: craft_5, width: 600, height: 1000, key: 'gallery-6-5' },
+        ]
+    },
+    {
+        id: 5,
+        thumbnail: excursion_25_thumbnail,
+        caption: '2025 Excursion',
+        category: 'Excursion',
+        images: [
+            { src: excursion_25_1, width: 1000, height: 700, key: 'gallery-5-1' },
+            { src: excursion_25_2, width: 1000, height: 700, key: 'gallery-5-2' },
+            { src: excursion_25_3, width: 1000, height: 700, key: 'gallery-5-3' },
+            { src: excursion_25_4, width: 1000, height: 700, key: 'gallery-5-4' },
+            { src: excursion_25_5, width: 1000, height: 700, key: 'gallery-5-5' },
+            { src: excursion_25_6, width: 1000, height: 700, key: 'gallery-5-6' },
+            { src: excursion_25_7, width: 1000, height: 700, key: 'gallery-5-7' },
+            { src: excursion_25_8, width: 1000, height: 700, key: 'gallery-5-8' },
+        ]
+    },
+    {
+        id: 4,
+        thumbnail: pta_thumbnail,
+        caption: 'PTA Meeting',
+        category: 'PTA',
+        images: [
+            { src: pta_1, width: 1000, height: 500, key: 'gallery-4-1' },
+            { src: pta_2, width: 1000, height: 500, key: 'gallery-4-2' },
+            { src: pta_3, width: 1000, height: 500, key: 'gallery-4-3' },
+        ]
+    },
+    {
+        id: 3,
+        thumbnail: party_24_thumbnail,
+        caption: '2024 Prize Giving',
+        category: 'Prize Giving',
+        images: [
+            { src: party_24_1, width: 1000, height: 500, key: 'gallery-3-1' },
+            { src: party_24_2, width: 1000, height: 500, key: 'gallery-3-2' },
+            { src: party_24_3, width: 1000, height: 500, key: 'gallery-3-3' },
+            { src: party_24_4, width: 1000, height: 500, key: 'gallery-3-4' },
+            { src: party_24_5, width: 1000, height: 500, key: 'gallery-3-5' },
+            { src: party_24_6, width: 1000, height: 500, key: 'gallery-3-6' },
+            { src: party_24_7, width: 1000, height: 500, key: 'gallery-3-7' },
+            // { src: party_24_8, width: 1000, height: 500, key: 'gallery-3-8' },
+            { src: party_24_9, width: 1000, height: 500, key: 'gallery-3-9' },
+            { src: party_24_10, width: 1000, height: 500, key: 'gallery-3-10' },
+        ]
+    },
+    {
+        id: 2,
+        thumbnail: childrenDay_24_thumbnail,
+        caption: '2024 Childrens Day',
+        category: "Childrens' Day",
+        images: [
+            { src: childrenDay_24_1, width: 1000, height: 500, key: 'gallery-2-1' },
+            { src: childrenDay_24_2, width: 1000, height: 500, key: 'gallery-2-2' },
+            { src: childrenDay_24_3, width: 1000, height: 500, key: 'gallery-2-3' },
+            { src: childrenDay_24_4, width: 1000, height: 500, key: 'gallery-2-4' },
+        ]
+    },
+    {
+        id: 1,
+        thumbnail: excursion_24_thumbnail,
+        caption: '2024 Excursion',
+        category: 'Excursion',
+        images: [
+            { src: excursion_24_1, width: 1000, height: 500, key: 'gallery-1-1' },
+            { src: excursion_24_2, width: 1000, height: 500, key: 'gallery-1-2' },
+            { src: excursion_24_3, width: 1000, height: 500, key: 'gallery-1-3' },
+            // { src: excursion_24_4, width: 1000, height: 500, key: 'gallery-1-4' },
+            
         ]
     },
 ]

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import FilterButton from '../components/FilterButton';
 import '../assets/styles/gallery.css';
 import { mainGallery } from '../data';
 import { FaPhotoFilm } from "react-icons/fa6";
@@ -10,6 +11,13 @@ export default function Gallery() {
 
     const [galleryId, setGalleryId] = useState(0);
     const [activeAlbum, setActiveAlbum] = useState(true);
+    const [selectedCategory, setSelectedCategory] = useState('All');
+    const [activeFilter, setActiveFilter] = useState(false)
+
+    function handleFilterClick(category) {
+        setSelectedCategory(category);
+        setActiveFilter(af => !af);
+    }
 
     function handleSelect(selectedId) {
         setGalleryId(selectedId);
@@ -27,14 +35,32 @@ export default function Gallery() {
     return (
         <article className="gallery__section">
             <div className="container gallery__container">
+                
+                <div className="gallery__filter">
+                    <button className="gallery__filter-btn" onClick={()=> setActiveFilter(af => !af)}>
+                        <span><FaPhotoFilm /></span>
+                        <span>filter</span>
+                    </button>
+
+                    <div className={`gallery__filter-dropdown ${activeFilter ? "active-gallery__filter" : ''}`}>
+                        <button type='button' onClick={() => handleFilterClick('All')}>All</button>
+                        <button type='button' onClick={() => handleFilterClick('Prize Giving')}>Prize Giving</button>
+                        <button type='button' onClick={() => handleFilterClick('Fruit Day')}>Fruit Day</button>
+                        <button type='button' onClick={() => handleFilterClick("Childrens' Day")}>Childrens' Day</button>
+                        <button type='button' onClick={() => handleFilterClick('Excursion')}>Excursion</button>
+                        <button type='button' onClick={() => handleFilterClick('Craft')}>Craft</button>
+                        <button type='button' onClick={() => handleFilterClick('PTA')}>PTA</button>
+                    </div>
+                </div>
+
                 <div className="gallery__cards">
-                    {mainGallery.map(({id, thumbnail, caption, images}) => (
-                        <div key={id} className="gallery__card" onClick={() => handleSelect(id)}>
+                    {mainGallery.map(({id, thumbnail, caption, category, images}) => (
+                        <div key={id} className={`gallery__card ${category === selectedCategory || selectedCategory === 'All' ? "active-gallery__card" : ''}`} onClick={() => handleSelect(id)}>
                             <div className="gallery__image">
                                 <img src={thumbnail} alt={caption} />
                             </div>
 
-                            <h5>{caption}</h5>
+                            <p>{caption}</p>
 
                             <div className="gallery__number">
                                 <i><FaPhotoFilm /></i>

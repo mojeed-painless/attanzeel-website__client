@@ -94,7 +94,7 @@ header {
 }
 
 .purple-header {
-    background-image: url('../images/header-image3.jpg');
+    background-image: url('../images/header-image3a.jpg');
     background-color: rgb(128, 0, 128);
 }
 .purple-header::before {
@@ -142,7 +142,7 @@ header {
     }
 
     .purple-header {
-        background-image: url('../images/header-image3-md.jpg');
+        background-image: url('../images/header-image3a-md.jpg');
     }
 
     .blue-header {
@@ -197,11 +197,11 @@ header {
     }
 
     .purple-header {
-        background-image: url('../images/header-image3-sm.jpg');
+        background-image: url('../images/header-image3a-sm.jpg');
     }
 
     .blue-header {
         background-image: url('../images/header-image4-sm.jpg');
-    }
+    } 
     
 }
