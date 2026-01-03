@@ -5,6 +5,7 @@ import { mainGallery } from '../data';
 import { FaPhotoFilm } from "react-icons/fa6";
 import { RowsPhotoAlbum } from "react-photo-album";
 import { MdCancel } from "react-icons/md";
+import { FiFilter } from "react-icons/fi";
 import "react-photo-album/rows.css";
 
 export default function Gallery() {
@@ -38,7 +39,7 @@ export default function Gallery() {
                 
                 <div className="gallery__filter">
                     <button className="gallery__filter-btn" onClick={()=> setActiveFilter(af => !af)}>
-                        <span><FaPhotoFilm /></span>
+                        <span><FiFilter /></span>
                         <span>filter</span>
                     </button>
 
