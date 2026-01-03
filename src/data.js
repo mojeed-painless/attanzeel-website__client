@@ -23,79 +23,7 @@ import activityCard3 from './assets/images/activitycard3.jpg';
 import parent4 from './assets/images/parent4.jpg';
 import parent3 from './assets/images/parent3.jpg';
 
-import excursion_24_thumbnail from './assets/images/excursion_2024/excursion_24_thumbnail.jpg';
-import excursion_24_1 from './assets/images/excursion_2024/excursion_24_1.jpg';
-import excursion_24_2 from './assets/images/excursion_2024/excursion_24_2.jpg';
-import excursion_24_3 from './assets/images/excursion_2024/excursion_24_3.jpg';
-import excursion_24_4 from './assets/images/excursion_2024/excursion_24_4.jpg';
 
-import childrenDay_24_thumbnail from './assets/images/childrenDay_2024/childrenDay_24_thumbnail.jpg';
-import childrenDay_24_1 from './assets/images/childrenDay_2024/childrenDay_24_1.jpg';
-import childrenDay_24_2 from './assets/images/childrenDay_2024/childrenDay_24_2.jpg';
-import childrenDay_24_3 from './assets/images/childrenDay_2024/childrenDay_24_3.jpg';
-import childrenDay_24_4 from './assets/images/childrenDay_2024/childrenDay_24_4.jpg';
-
-import party_24_thumbnail from './assets/images/party_2024/party_24_thumbnail.jpg';
-import party_24_1 from './assets/images/party_2024/party_24_1.jpg';
-import party_24_2 from './assets/images/party_2024/party_24_2.jpg';
-import party_24_3 from './assets/images/party_2024/party_24_3.jpg';
-import party_24_4 from './assets/images/party_2024/party_24_4.jpg';
-import party_24_5 from './assets/images/party_2024/party_24_5.jpg';
-import party_24_6 from './assets/images/party_2024/party_24_6.jpg';
-import party_24_7 from './assets/images/party_2024/party_24_7.jpg';
-import party_24_8 from './assets/images/party_2024/party_24_8.jpg';
-import party_24_9 from './assets/images/party_2024/party_24_9.jpg';
-import party_24_10 from './assets/images/party_2024/party_24_10.jpg';
-
-import pta_thumbnail from './assets/images/PTA/pta_thumbnail.jpg';
-import pta_1 from './assets/images/PTA/pta_1.jpg';
-import pta_2 from './assets/images/PTA/pta_2.jpg';
-import pta_3 from './assets/images/PTA/pta_3.jpg';
-
-import excursion_25_thumbnail from './assets/images/excursion_2025/excursion_25_thumbnail.jpg';
-import excursion_25_1 from './assets/images/excursion_2025/excursion_25_1.jpg';
-import excursion_25_2 from './assets/images/excursion_2025/excursion_25_2.jpg';
-import excursion_25_3 from './assets/images/excursion_2025/excursion_25_3.jpg';
-import excursion_25_4 from './assets/images/excursion_2025/excursion_25_4.jpg';
-import excursion_25_5 from './assets/images/excursion_2025/excursion_25_5.jpg';
-import excursion_25_6 from './assets/images/excursion_2025/excursion_25_6.jpg';
-import excursion_25_7 from './assets/images/excursion_2025/excursion_25_7.jpg';
-import excursion_25_8 from './assets/images/excursion_2025/excursion_25_8.jpg';
-
-import craft_thumbnail from './assets/images/craft/craft_thumbnail.jpg';
-import craft_1 from './assets/images/craft/craft_1.jpg';
-import craft_2 from './assets/images/craft/craft_2.jpg';
-import craft_3 from './assets/images/craft/craft_3.jpg';
-import craft_4 from './assets/images/craft/craft_4.jpg';
-import craft_5 from './assets/images/craft/craft_5.jpg';
-
-import party_25_thumbnail from './assets/images/party_2025/party_25_thumbnail.jpg';
-import party_25_1 from './assets/images/party_2025/party_25_1.jpg';
-import party_25_2 from './assets/images/party_2025/party_25_2.jpg';
-import party_25_3 from './assets/images/party_2025/party_25_3.jpg';
-import party_25_4 from './assets/images/party_2025/party_25_4.jpg';
-import party_25_5 from './assets/images/party_2025/party_25_5.jpg';
-import party_25_6 from './assets/images/party_2025/party_25_6.jpg';
-import party_25_7 from './assets/images/party_2025/party_25_7.jpg';
-import party_25_8 from './assets/images/party_2025/party_25_8.jpg';
-import party_25_9 from './assets/images/party_2025/party_25_9.jpg';
-
-import fruitDay_25_thumbnail from './assets/images/fruitDay_2025/fruitDay_25_thumbnail.jpg';
-import fruitDay_25_1 from './assets/images/fruitDay_2025/fruitDay_25_1.jpg';
-import fruitDay_25_2 from './assets/images/fruitDay_2025/fruitDay_25_2.jpg';
-import fruitDay_25_3 from './assets/images/fruitDay_2025/fruitDay_25_3.jpg';
-import fruitDay_25_4 from './assets/images/fruitDay_2025/fruitDay_25_4.jpg';
-import fruitDay_25_5 from './assets/images/fruitDay_2025/fruitDay_25_5.jpg';
-import fruitDay_25_6 from './assets/images/fruitDay_2025/fruitDay_25_6.jpg';
-import fruitDay_25_7 from './assets/images/fruitDay_2025/fruitDay_25_7.jpg';
-import fruitDay_25_8 from './assets/images/fruitDay_2025/fruitDay_25_8.jpg';
-import fruitDay_25_9 from './assets/images/fruitDay_2025/fruitDay_25_9.jpg';
-import fruitDay_25_10 from './assets/images/fruitDay_2025/fruitDay_25_10.jpg';
-import fruitDay_25_11 from './assets/images/fruitDay_2025/fruitDay_25_11.jpg';
-import fruitDay_25_12 from './assets/images/fruitDay_2025/fruitDay_25_12.jpg';
-import fruitDay_25_13 from './assets/images/fruitDay_2025/fruitDay_25_13.jpg';
-import fruitDay_25_14 from './assets/images/fruitDay_2025/fruitDay_25_14.jpg';
-import fruitDay_25_15 from './assets/images/fruitDay_2025/fruitDay_25_15.jpg';
 
 
 
@@ -151,13 +79,13 @@ export const links = [
     {id: 2, Icon: FaBookOpenReader, path: '/about', name: 'About'},
     {id: 5, Icon: HiMiniAcademicCap, name: 'Academics',
         subLinks: [
+            {id: 4, path: '/admissions', name: 'Admissions'},
             {id: 1, path: '/academic-calender', name: 'Academic Calender'},
-            {id: 2, path: '/dress-code', name: 'Dress Code'},
+            // {id: 2, path: '/dress-code', name: 'Dress Code'},
             {id: 3, path: '/conduct', name: 'Code of Conduct'},
-            // {id: 4, path: '/admissions', name: 'Admissions'},
         ]
     },
-    {id: 3, Icon: BiSolidParty, path: '/activity', name: 'Activity'},
+    // {id: 3, Icon: BiSolidParty, path: '/activity', name: 'Activity'},
     {id: 6, Icon: RiGalleryFill, path: '/gallery', name: 'Gallery'},
     {id: 4, Icon: RiDoorOpenFill, name: 'Login',
         subLinks: [
@@ -446,6 +374,90 @@ export const testimonials = [
 
 
 
+
+
+
+
+
+
+
+
+import excursion_24_thumbnail from './assets/images/excursion_2024/excursion_24_thumbnail.jpg';
+import excursion_24_1 from './assets/images/excursion_2024/excursion_24_1.jpg';
+import excursion_24_2 from './assets/images/excursion_2024/excursion_24_2.jpg';
+import excursion_24_3 from './assets/images/excursion_2024/excursion_24_3.jpg';
+import excursion_24_4 from './assets/images/excursion_2024/excursion_24_4.jpg';
+
+import childrenDay_24_thumbnail from './assets/images/childrenDay_2024/childrenDay_24_thumbnail.jpg';
+import childrenDay_24_1 from './assets/images/childrenDay_2024/childrenDay_24_1.jpg';
+import childrenDay_24_2 from './assets/images/childrenDay_2024/childrenDay_24_2.jpg';
+import childrenDay_24_3 from './assets/images/childrenDay_2024/childrenDay_24_3.jpg';
+import childrenDay_24_4 from './assets/images/childrenDay_2024/childrenDay_24_4.jpg';
+
+import party_24_thumbnail from './assets/images/party_2024/party_24_thumbnail.jpg';
+import party_24_1 from './assets/images/party_2024/party_24_1.jpg';
+import party_24_2 from './assets/images/party_2024/party_24_2.jpg';
+import party_24_3 from './assets/images/party_2024/party_24_3.jpg';
+import party_24_4 from './assets/images/party_2024/party_24_4.jpg';
+import party_24_5 from './assets/images/party_2024/party_24_5.jpg';
+import party_24_6 from './assets/images/party_2024/party_24_6.jpg';
+import party_24_7 from './assets/images/party_2024/party_24_7.jpg';
+import party_24_8 from './assets/images/party_2024/party_24_8.jpg';
+import party_24_9 from './assets/images/party_2024/party_24_9.jpg';
+import party_24_10 from './assets/images/party_2024/party_24_10.jpg';
+
+import pta_thumbnail from './assets/images/PTA/pta_thumbnail.jpg';
+import pta_1 from './assets/images/PTA/pta_1.jpg';
+import pta_2 from './assets/images/PTA/pta_2.jpg';
+import pta_3 from './assets/images/PTA/pta_3.jpg';
+
+import excursion_25_thumbnail from './assets/images/excursion_2025/excursion_25_thumbnail.jpg';
+import excursion_25_1 from './assets/images/excursion_2025/excursion_25_1.jpg';
+import excursion_25_2 from './assets/images/excursion_2025/excursion_25_2.jpg';
+import excursion_25_3 from './assets/images/excursion_2025/excursion_25_3.jpg';
+import excursion_25_4 from './assets/images/excursion_2025/excursion_25_4.jpg';
+import excursion_25_5 from './assets/images/excursion_2025/excursion_25_5.jpg';
+import excursion_25_6 from './assets/images/excursion_2025/excursion_25_6.jpg';
+import excursion_25_7 from './assets/images/excursion_2025/excursion_25_7.jpg';
+import excursion_25_8 from './assets/images/excursion_2025/excursion_25_8.jpg';
+
+import craft_thumbnail from './assets/images/craft/craft_thumbnail.jpg';
+import craft_1 from './assets/images/craft/craft_1.jpg';
+import craft_2 from './assets/images/craft/craft_2.jpg';
+import craft_3 from './assets/images/craft/craft_3.jpg';
+import craft_4 from './assets/images/craft/craft_4.jpg';
+// import craft_5 from './assets/images/craft/craft_5.jpg';
+
+import party_25_thumbnail from './assets/images/party_2025/party_25_thumbnail.jpg';
+import party_25_1 from './assets/images/party_2025/party_25_1.jpg';
+import party_25_2 from './assets/images/party_2025/party_25_2.jpg';
+import party_25_3 from './assets/images/party_2025/party_25_3.jpg';
+import party_25_4 from './assets/images/party_2025/party_25_4.jpg';
+import party_25_5 from './assets/images/party_2025/party_25_5.jpg';
+import party_25_6 from './assets/images/party_2025/party_25_6.jpg';
+import party_25_7 from './assets/images/party_2025/party_25_7.jpg';
+import party_25_8 from './assets/images/party_2025/party_25_8.jpg';
+import party_25_9 from './assets/images/party_2025/party_25_9.jpg';
+
+import fruitDay_25_thumbnail from './assets/images/fruitDay_2025/fruitDay_25_thumbnail.jpg';
+import fruitDay_25_1 from './assets/images/fruitDay_2025/fruitDay_25_1.jpg';
+import fruitDay_25_2 from './assets/images/fruitDay_2025/fruitDay_25_2.jpg';
+import fruitDay_25_3 from './assets/images/fruitDay_2025/fruitDay_25_3.jpg';
+import fruitDay_25_4 from './assets/images/fruitDay_2025/fruitDay_25_4.jpg';
+import fruitDay_25_5 from './assets/images/fruitDay_2025/fruitDay_25_5.jpg';
+import fruitDay_25_6 from './assets/images/fruitDay_2025/fruitDay_25_6.jpg';
+import fruitDay_25_7 from './assets/images/fruitDay_2025/fruitDay_25_7.jpg';
+import fruitDay_25_8 from './assets/images/fruitDay_2025/fruitDay_25_8.jpg';
+import fruitDay_25_9 from './assets/images/fruitDay_2025/fruitDay_25_9.jpg';
+import fruitDay_25_10 from './assets/images/fruitDay_2025/fruitDay_25_10.jpg';
+import fruitDay_25_11 from './assets/images/fruitDay_2025/fruitDay_25_11.jpg';
+import fruitDay_25_12 from './assets/images/fruitDay_2025/fruitDay_25_12.jpg';
+import fruitDay_25_13 from './assets/images/fruitDay_2025/fruitDay_25_13.jpg';
+import fruitDay_25_14 from './assets/images/fruitDay_2025/fruitDay_25_14.jpg';
+import fruitDay_25_15 from './assets/images/fruitDay_2025/fruitDay_25_15.jpg';
+
+
+
 export const mainGallery = [
     {
         id: 8,
@@ -499,7 +511,7 @@ export const mainGallery = [
             { src: craft_2, width: 600, height: 1000, key: 'gallery-6-2' },
             { src: craft_3, width: 600, height: 1000, key: 'gallery-6-3' },
             { src: craft_4, width: 600, height: 1000, key: 'gallery-6-4' },
-            { src: craft_5, width: 600, height: 1000, key: 'gallery-6-5' },
+            // { src: craft_5, width: 600, height: 1000, key: 'gallery-6-5' },
         ]
     },
     {
@@ -613,3 +625,42 @@ export const grades = [
         remark: 'Below Average'
     }
 ] 
+
+
+
+
+
+
+
+import { TbHexagonNumber1Filled } from "react-icons/tb";
+import { TbHexagonNumber2Filled } from "react-icons/tb";
+import { TbHexagonNumber3Filled } from "react-icons/tb";
+import { TbHexagonNumber4Filled } from "react-icons/tb";
+
+
+export const admissionsProcess = [
+    {
+        id: 1,
+        Icon: TbHexagonNumber1Filled,
+        title: 'Inquiry',
+        description: 'Submit the inquiry form below or visit the school to gather information about our programs and facilities'
+    },
+    {
+        id: 2,
+        Icon: TbHexagonNumber2Filled,
+        title: 'Application',
+        description: 'Pickup the application form from the school office or download it from our website. Complete the form and submit it along with the required documents.'
+    },
+    {
+        id: 3,
+        Icon: TbHexagonNumber3Filled,
+        title: 'Interview',
+        description: 'Meet with our admissions team for an interview to discuss your child’s needs and how we can best support their education.'
+    },
+    {
+        id: 4,
+        Icon: TbHexagonNumber4Filled,
+        title: 'Acceptance',
+        description: 'Receive an acceptance letter and complete the enrollment process by paying the necessary fees and submitting any additional required documents.'
+    },
+]

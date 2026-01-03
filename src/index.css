@@ -7,6 +7,7 @@
     --color_darkgrey:#4E5A62;
     --color_lightgrey:#CCCCCC;
     --color_lightgrey2:#ececec;
+    --color-green-gradient: linear-gradient(90deg, #034c36, #003332);
 }
 
 * {

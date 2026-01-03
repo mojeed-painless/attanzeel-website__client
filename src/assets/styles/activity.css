@@ -4,7 +4,7 @@
 
 .main-activity__cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 3rem;
 }
 
@@ -42,7 +42,11 @@
 
 
 
-
+@media screen and (max-width: 1024px) {
+    .main-activity__cards {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+}
 
 
 
@@ -51,6 +55,7 @@
         grid-template-columns: repeat(1, 1fr);
         gap: 3rem;
     }
+    
 
     .main-activity__message {
         padding-inline: 1rem;

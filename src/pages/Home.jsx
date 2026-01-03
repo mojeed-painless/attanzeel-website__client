@@ -8,6 +8,8 @@ import maleAnonymous from '../assets/images/male-anonymous.jpg';
 import femaleAnonymous from '../assets/images/female-anonymous.jpg';
 import { statistics, categories, activities } from '../data';
 import { FaRegArrowAltCircleLeft, FaRegArrowAltCircleRight } from "react-icons/fa";
+import qoutationMark1 from "../assets/images/qoutation-mark.png";
+import qoutationMark2 from "../assets/images/qoutation-mark2.png";
 
 export default function Home() {
 
@@ -109,15 +111,15 @@ export default function Home() {
 
                             <div className="activity__message">
                                 <h4>{activity.title}</h4>
-                                <p>{activity.body}</p>
+                                <small>{activity.body}</small>
                             </div>
 
-                            <Link to={activity.path} className="btn2">Read More</Link>
+                            {/* <Link to={activity.path} className="btn2">Read More</Link> */}
                         </div>
                     ))}
                 </div>
 
-               <Link to='/activity'><div className="btn btn1">View More</div></Link>
+               <Link to=''><div className="btn btn1">View More</div></Link>
             </div>
         </article>
 
@@ -131,7 +133,17 @@ export default function Home() {
                     <div className="testimonial__cards">
                         {testimonials.map(({id, testimony, image, name, profession, gender}) => (
                             <div key={id} className={"testimonial__card" + (id === currentTestimonial ? " active-testimonial__card" : "")}>
-                                <p><span>"</span>{testimony}"</p>
+                                <small>
+                                    <span>
+                                        <img src={qoutationMark1} alt="" />
+                                    </span>
+
+                                    {testimony}
+                                
+                                    <span>
+                                        <img src={qoutationMark2} alt="" />
+                                    </span>
+                                </small>
 
                                 <div className="testimonial__footer">
                                     <div className="testimonial__image">
