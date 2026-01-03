@@ -45,7 +45,7 @@ export default function Home() {
         year: "numeric"
     }).format(new Date());
 
-    const hijriDateEng = new Intl.DateTimeFormat("en-TN-u-ca-islamic", {
+    const hijriDateEng = new Intl.DateTimeFormat("en-u-ca-islamic", {
         day: "numeric",
         month: "long",
         year: "numeric"
