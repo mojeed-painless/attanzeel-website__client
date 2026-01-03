@@ -11,6 +11,7 @@ import DressCode from './pages/DressCode';
 import CodeOfConduct from './pages/CodeOfConduct';
 import Admissions from './pages/Admissions';
 import Activity from './pages/Activity';
+import News from './pages/News';
 import Gallery from './pages/Gallery';
 import BasicSection from './pages/BasicSection';
 import CollegeSection from './pages/CollegeSection';
@@ -37,6 +38,7 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/academic-calender' element={<AcademicCalender />} />
           <Route path='/dress-code' element={<DressCode />} />
+          <Route path='/news' element={<News />} />
           <Route path='/conduct' element={<CodeOfConduct />} />
           <Route path='/admissions' element={<Admissions />} />
           <Route path='/activity' element={<Activity />} />

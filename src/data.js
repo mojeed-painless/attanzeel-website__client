@@ -52,7 +52,7 @@ export const headerInfo = [
         title: "2025/2026 Session Admission is ongoing",
         content: "Enroll your ward today for an effective academic growth blended with islamic values",
         buttonText: "Enroll now",
-        link: "",
+        link: "/admissions",
     },
     {
         id: 2,
@@ -60,7 +60,7 @@ export const headerInfo = [
         title: "Fruits day: 2024/2025 Session",
         content: "A fun and educational activity that encourages healthy eating habits.",
         buttonText: "Learn more",
-        link: "",
+        link: "/news",
     },
     {
         id: 3,
@@ -68,7 +68,7 @@ export const headerInfo = [
         title: "Celebrating Outstanding Performance",
         content: "We achieved a 99% Success in just Concluded WEAC & NECO",
         buttonText: "Read more",
-        link: "",
+        link: "/news",
     }
 ]
 
