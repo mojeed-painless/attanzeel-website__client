@@ -2,7 +2,7 @@ import { useState } from 'react';
 import  { Link } from 'react-router-dom';
 import HeaderInformation from '../components/HeaderInformation.jsx';
 import '../assets/styles/home.css';
-import { testimonials } from '../data.js';
+import { testimonials, hadiths } from '../data.js';
 import heroImage1 from '../assets/images/hero-image1.png';
 import maleAnonymous from '../assets/images/male-anonymous.jpg';
 import femaleAnonymous from '../assets/images/female-anonymous.jpg';
@@ -30,6 +30,29 @@ export default function Home() {
             setCurrentTestimonial(currentTestimonial - 1);
         }
     }
+
+      const gregorianDate = new Intl.DateTimeFormat("en-NG", {
+        weekday: "long",
+        day: "numeric",
+        month: "long",
+        year: "numeric"
+    }).format(new Date());
+
+
+    const hijriDate = new Intl.DateTimeFormat("ar-TN-u-ca-islamic", {
+        day: "numeric",
+        month: "long",
+        year: "numeric"
+    }).format(new Date());
+
+    const hijriDateEng = new Intl.DateTimeFormat("en-TN-u-ca-islamic", {
+        day: "numeric",
+        month: "long",
+        year: "numeric"
+    }).format(new Date());
+
+        const today = new Date().getDate();
+        const hadith = hadiths[today % hadiths.length];
 
     return (
         <>
@@ -78,6 +101,30 @@ export default function Home() {
                     ))}
                 </div>
             </div>
+        </article>
+
+
+        <article className="hadith__section">
+            <div className="hadith__container">
+                <div className="gregorian__date">
+                    <strong>Gregorian Date:</strong> <br />
+                    {gregorianDate}
+                </div>
+                
+                <div className="hadith__content">
+                    <h3>📿 Daily Hadith</h3>
+                    <p className='arabic-hadith__content'>{hadith.ar}</p> 
+                    <p><em>"{hadith.en}"</em></p> 
+                    <small>– Prophet Muhammad (SAW)</small> 
+                </div>
+                
+
+                <div className="hijri__date">
+                    <span>🕋 <strong>التاريخ الهجري:</strong> {hijriDate}</span>
+                    <span><strong>Hijrah Date: {hijriDateEng}</strong></span>
+                </div>
+            </div>
+
         </article>
 
         <article className='category__section'>

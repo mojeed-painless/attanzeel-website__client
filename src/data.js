@@ -137,6 +137,24 @@ export const statistics = [
 
 
 
+
+
+export const hadiths = [
+  {
+    ar: "خيركم من تعلم القرآن وعلمه",
+    en: "The best among you are those who learn the Qur’an and teach it."
+  },
+  {
+    ar: "إنما الأعمال بالنيات",
+    en: "Actions are judged by intentions."
+  },
+  {
+    ar: "الدين النصيحة",
+    en: "Religion is sincerity."
+  }
+];
+
+
 export const categories = [
     {id: 1, path: '/basic', title: 'Basic Section', icon: FaGoogleScholar},
     {id: 2, path: '/college', title: 'College Section', icon: FaBuildingColumns},
