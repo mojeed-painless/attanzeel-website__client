@@ -40,6 +40,7 @@ export default function Home() {
 
 
     const hijriDate = new Intl.DateTimeFormat("ar-TN-u-ca-islamic", {
+        weekday: "long",
         day: "numeric",
         month: "long",
         year: "numeric"
@@ -117,6 +118,8 @@ export default function Home() {
                     <p><em>"{hadith.en}"</em></p> 
                     <small>– Prophet Muhammad (SAW)</small> 
                 </div>
+
+                <p>{tryDate}</p>
                 
 
                 <div className="hijri__date">
