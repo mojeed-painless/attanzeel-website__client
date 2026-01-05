@@ -118,8 +118,6 @@ export default function Home() {
                     <p><em>"{hadith.en}"</em></p> 
                     <small>– Prophet Muhammad (SAW)</small> 
                 </div>
-
-                <p>{tryDate}</p>
                 
 
                 <div className="hijri__date">
