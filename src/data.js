@@ -20,8 +20,7 @@ import activityCard1 from './assets/images/activitycard1.jpg';
 import activityCard2 from './assets/images/activitycard2.jpg';
 import activityCard3 from './assets/images/activitycard3.jpg';
 
-import parent4 from './assets/images/parent4.jpg';
-import parent3 from './assets/images/parent3.jpg';
+
 
 
 
@@ -354,6 +353,15 @@ export const staff = [
 
 
 
+
+
+
+
+
+import parent4 from './assets/images/parent4.jpg';
+import parent3 from './assets/images/parent3.jpg';
+import parent5 from './assets/images/parent5.jpg';
+
 export const testimonials = [
     { 
         id: 1,
@@ -386,6 +394,22 @@ export const testimonials = [
         name: 'Mrs. Olagunju Rukayat',
         gender: 'female', 
         profession:  'Teacher'
+    },
+    { 
+        id: 5,
+        image: parent5,
+        testimony: "Attanzeel Schools has helped my children develop strong academic knowledge as well as good morals, discipline, and Islamic values, which are essential for a balanced upbringing. I believe in a balanced education. Western education builds academic skills and confidence, while Islamic education instills good morals, discipline, and strong religious values. Together, they help shape my children into responsible and well-rounded individuals.",
+        name: 'Mr. Rasak Siraj',
+        gender: 'male', 
+        profession:  'Sales Executive'
+    },
+    { 
+        id: 6,
+        image: '',
+        testimony: "At-Tanzeel School provides a perfect blend of high-standard academic studies and a strong moral and Islamic foundation. I have seen a massive improvement in my children’s confidence and their love for learning. The teachers are not just educators; they are mentors who truly care about the spiritual and academic well-being of the students. JazakAllah Khairan to the staff for providing a safe and supportive environment for our children.",
+        name: 'Mrs. Abdulsalam Azeezat',
+        gender: 'female', 
+        profession:  'Entrepreneur'
     },
 ]
 
