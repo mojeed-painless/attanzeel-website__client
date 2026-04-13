@@ -86,12 +86,8 @@ export const links = [
     },
     // {id: 3, Icon: BiSolidParty, path: '/activity', name: 'Activity'},
     {id: 6, Icon: RiGalleryFill, path: '/gallery', name: 'Gallery'},
-    {id: 4, Icon: RiDoorOpenFill, name: 'Login',
-        subLinks: [
-            {id: 1, path: '/portal', name: 'Existing Student'},
-            {id: 3, path: '/portal', name: 'Staff'},
-        ]
-    }
+    {id: 4, Icon: RiDoorOpenFill, path: 'https://portal.attanzeel.com', name: 'Portal'},
+
 ]
 
 export const subLinks = [

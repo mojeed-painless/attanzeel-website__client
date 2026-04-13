@@ -37,11 +37,13 @@ export default function MainLayout( {handleRoleSet} ) {
                         {links.map(({id, path, name, subLinks}) => (
                             <li key={id}>
                                 {
-                                    (id === 4 || id === 5) ? <span>{name}</span> :
+                                    id === 5 ? <span>{name}</span> :
 
-                                    <NavLink to={path} className={({ isActive }) => isActive ? 'active-link' : ''} onClick={(id === 4) ? handleSelect : ''}>{name}</NavLink>
+                                    (path.startsWith('http') ?
+                                        <a href={path} target="_blank" rel="noopener noreferrer">{name}</a> :
+                                        <NavLink to={path} className={({ isActive }) => isActive ? 'active-link' : ''}>{name}</NavLink>)
                                 }
-                                    {(id === 4 || id === 5) && 
+                                    {id === 5 && 
                                         <ul className={`sub-nav__links ${ !isActive ? "active_sub-nav" : ''}`}>
                                             {subLinks.map(({id, path, name}) => (
                                                 <li key={id}>
@@ -62,19 +64,24 @@ export default function MainLayout( {handleRoleSet} ) {
                             {links.map(({id, path, name, Icon, subLinks}) => (
                                 <li key={id}>
                                     {
-                                        (id === 4 || id === 5) ? 
+                                        id === 5 ? 
                                         <span>
                                             <i><Icon /></i>
                                             {name}
                                         </span> :
 
-                                        <NavLink to={path} className={({ isActive }) => isActive ? 'small-active-link' : ''} onClick={(id === 4) ? handleSelect : handleSwitchButton}>
-                                            <i><Icon /></i>
-                                            {name}
-                                        </NavLink>
+                                        (path.startsWith('http') ?
+                                            <a href={path} target="_blank" rel="noopener noreferrer">
+                                                <i><Icon /></i>
+                                                {name}
+                                            </a> :
+                                            <NavLink to={path} className={({ isActive }) => isActive ? 'small-active-link' : ''} >
+                                                <i><Icon /></i>
+                                                {name}
+                                            </NavLink>)
                                     } 
 
-                                    {(id === 4 || id === 5) && 
+                                    {(id === 5) && 
                                         <ul className={`sm-sub-nav__links ${ !isActive ? "active_sub-nav" : ''}`}>
                                             {subLinks.map(({id, path, name}) => (
                                                 <li key={id} onClick={handleSwitchButton}>
@@ -110,9 +117,11 @@ export default function MainLayout( {handleRoleSet} ) {
                                 {links.map(({ id, path, name }) => (
                                     <li key={id}>
                                         {
-                                            (id === 4 || id === 5) ? <span>{name}</span> :
+                                            (id === 5) ? <span>{name}</span> :
 
-                                            <NavLink to={path} className={({ isActive }) => isActive ? 'footer__active-link' : ''} onClick={(id === 4) ? handleSelect : ''}>{name}</NavLink>
+                                            (path.startsWith('http') ?
+                                                <a href={path} target="_blank" rel="noopener noreferrer">{name}</a> :
+                                                <NavLink to={path} className={({ isActive }) => isActive ? 'footer__active-link' : ''}>{name}</NavLink>)
                                         }                                    
                                     </li>
                                 ))}
